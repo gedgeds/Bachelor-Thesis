@@ -1,0 +1,34 @@
+\section{IOTA panaudojamumas tiekimo grandinėse}
+
+Prieš pradėdami modeliuoti IOTA taikymą, turime apsibrėžti sąlygas, kada tą apsimokėtų daryti. Technologiją galime taikyti bet kurioje tiekimo grandinėje, kuri tenkina bent vieną sąlygą:
+
+\begin{itemize}
+    \item Reikalingi jutiklių prietaisų arba prietaisais nepamatuojami duomenys, pavyzdžiui RFID jutiklis, matuojantis temperatūrą konteineryje.
+    \item Atliekamos finansinės arba informacinės transakcijos. Pavyzdžiui, atsiskaitoma už paslaugas ar prekes.
+    \item Reikalingas automatizuotas M2M bendravimas. Pavyzdžiui, vieni elektroniniai prietaisai bendrauja ar perduoda informaciją kitiems prietaisams be papildomo žmogaus įsikišimo.
+    \item Reikalingas absoliutus duomenų pastovumas, t.y. kad duomenų negalėtų pakoreguoti ar ištrinti absoliučiai niekas ir jie būtų prieinami amžinai.
+    \item reikalingi atlikti skaičiavimai, pavyzdžiui matematinės ir statistinės formulės priklausomai nuo daviklių duomenų.
+\end{itemize}
+
+\subsection{Tiekimo grandinės atvejis}
+Pabandykime sumodeliuoti paprastą tiekimo grandinę, kuri galėtų savo skirtinguose grandies etapuose būti praplėsta pritaikant naujas technologijas. Tokia tiekimo grandinė pavaizduota priede nr. 1. Šis teikimo grandinės atvejis vaizduoja supaprastintą vaisių tiekimo grandinę nuo sėklų įsigijimo iki kliento vaisių įsigijimo prekybos centre. Tiekimo grandinė realiame pasaulyje gali būti gerokai sudėtingesnė ir turėti skirtingų variacijų, tačiau pasirinktas atvejis siekiant įtraukti kuo daugiau skirtingų savo specifika etapų. Tiekimo grandinė išskaidyta į 15 diskrečių etapų, kurių kiekvienas aprašytas toliau:
+\begin{enumerate}
+    \item Ūkininkas superka sėklas iš tiekėjo. Prieš tai yra sudaromas raštiškas kontraktas tarp sėklų tiekėjo ir ūkininko, kad už tam tikrą kainą ūkininkas gaus tam tikrą kiekį sėklų. Be to, sutartyje gali būti papildomų sąlygų, jei sėklų tiekėjas laiku neturės sėklų arba jų kokybė neatitiks keliamų standartų.
+    \item Ūkininkas nurenka pasėtą derlių. Tačiau prieš tai ūkininkas pasėja vaisių sėklas, sudaro tinkamas sąlygas jų auginimui, naudoja specialias trąšas ir atėjus laikui vaisius nurenka ir sandėliuoja.
+    \item Ūkininkas parduoda derlių supirkėjui. Pardavimas vyksta pagal iš anksto sudarytą kontraktą. Ūkininkas įsipareigoja atėjus konkrečiam terminui parduoti atitinkamą kiekį vaisių, atitinkančių nustatytą kokybės standartą už atitinkamą kainą tiekėjui.
+    \item Kurjeris pakrauna vaisius į sunkvežimį. Supirkėjas gali samdyti kurjerį iš logistikos įmonės, teikiančios transportavimo paslaugas arba turėti savo darbuotojus, atsakingus už prekių transportavimą. Pirmuoju atveju būtų sudaromas kontraktas tarp supirkėjo ir logistikos įmonės, įsipareigojančios atgabenti nepažeistas prekes iki nustatyto termino.
+    \item Vaisiai transportuojami iki fabriko.
+    \item Vaisiai apdirbami (pagaminami jų sub-produktai) ir sandėliuojami. Priklausomai nuo vaisių supirkėjo veiklos srities, jis gali vaisius paruošti pardavimui, pvz. apipurkšti cheminiu produktu, suteikiantį blizgumą ar ilgalaikiškumą, taip pat apdirbti juos supjaustant, panaudojant kaip sudedamąją dalį kituose produktuose ir t.t. Šie produktai sandėliuojami fabriko patalpose, kol atvyks kurjeriai, atsakingi už prekių transportavimą į prekybos centrus. Su prekybos centrais yra pasirašomi kontraktai, nustatantys kokius produktus už kokią kainą vaisių supirkėjas parduos prekybos centrui.
+    \item Apdirbti vaisiai pakraunami į sunkvežimį. Čia kurjeris gali būti samdomas tuo pačiu principu, kaip ir 4 etape.
+    \item Vaisiai transportuojami į jūrų uostą. Jūrų uostas pagal vidines taisykles perima konteinerį ir paruošia jį pakrovimui į laivą.
+    \item Vaisių konteineriai pakraunami į krovininį laivą.
+    \item Krovininis laivas nuplaukia į kitą uostą.
+    \item Vaisių konteineriai iškraunami į sunkvežimius. Tikėtina, kad kurjeris yra iš tos pačios logistikos kompanijos, kurios sunkvežimis nuvežė konteinerį į pirmąjį jūrų uostą.
+    \item Sunkvežimiai išvežioja vaisius į skirtingas šalis. Iki pasiekiant kitos valstybės sieną, kur kurjeris susiduria su muitine.
+    \item Muitinėse patikrinami kroviniai. Priklausomai nuo valstybės, už krovinio įvežimą į šalį, gali būti taikomi skirtingi mokesčiai. Už atsiskaitymą yra atsakingas prekybos centras, norintis įsivežti prekes. Susimokėjus muitinė išduoda specialų leidimą.
+    \item Vaisiai išvežiojami į prekybos centrus.
+    \item Vaisiai parduodami galutiniams pirkėjams.
+\end{enumerate}
+\bigskip
+
+\subsection{Tiekimo grandinės atvejis pritaikius IOTA technologiją}
