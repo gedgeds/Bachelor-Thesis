@@ -1,7 +1,10 @@
+% --------------------------------------------------------------- %
+%             3. IOTA PANAUDOJAMUMAS TIEKIMO GRANDINĖSE
+% --------------------------------------------------------------- %
+
 \section{IOTA panaudojamumas tiekimo grandinėse}
 
 Prieš pradėdami modeliuoti IOTA taikymą, turime apsibrėžti sąlygas, kada tą apsimokėtų daryti. Technologiją galime taikyti bet kurioje tiekimo grandinėje, kuri tenkina bent vieną sąlygą:
-
 \begin{itemize}
     \item Reikalingi jutiklių prietaisų arba prietaisais nepamatuojami duomenys, pavyzdžiui RFID jutiklis, matuojantis temperatūrą konteineryje.
     \item Atliekamos finansinės arba informacinės transakcijos. Pavyzdžiui, atsiskaitoma už paslaugas ar prekes.
@@ -10,7 +13,14 @@ Prieš pradėdami modeliuoti IOTA taikymą, turime apsibrėžti sąlygas, kada t
     \item reikalingi atlikti skaičiavimai, pavyzdžiui matematinės ir statistinės formulės priklausomai nuo daviklių duomenų.
 \end{itemize}
 
+
+
+% --------------------------------------------------------------- %
+%                   3.1. TIEKIMO GRANDINĖS ATVEJIS
+% --------------------------------------------------------------- %
+
 \subsection{Tiekimo grandinės atvejis}
+
 Pabandykime sumodeliuoti paprastą tiekimo grandinę, kuri galėtų savo skirtinguose grandies etapuose būti praplėsta pritaikant naujas technologijas. Tokia tiekimo grandinė pavaizduota priede nr. 1. Šis teikimo grandinės atvejis vaizduoja supaprastintą vaisių tiekimo grandinę nuo sėklų įsigijimo iki kliento vaisių įsigijimo prekybos centre. Tiekimo grandinė realiame pasaulyje gali būti gerokai sudėtingesnė ir turėti skirtingų variacijų, tačiau pasirinktas atvejis siekiant įtraukti kuo daugiau skirtingų savo specifika etapų. Tiekimo grandinė išskaidyta į 15 diskrečių etapų, kurių kiekvienas aprašytas toliau:
 \begin{enumerate}
     \item Ūkininkas superka sėklas iš tiekėjo. Prieš tai yra sudaromas raštiškas kontraktas tarp sėklų tiekėjo ir ūkininko, kad už tam tikrą kainą ūkininkas gaus tam tikrą kiekį sėklų. Be to, sutartyje gali būti papildomų sąlygų, jei sėklų tiekėjas laiku neturės sėklų arba jų kokybė neatitiks keliamų standartų.
@@ -29,6 +39,11 @@ Pabandykime sumodeliuoti paprastą tiekimo grandinę, kuri galėtų savo skirtin
     \item Vaisiai išvežiojami į prekybos centrus.
     \item Vaisiai parduodami galutiniams pirkėjams.
 \end{enumerate}
-\bigskip
+
+
+
+% --------------------------------------------------------------- %
+%   3.2. TIEKIMO GRANDINĖS ATVEJIS PRITAIKIUS IOTA TECHNOLOGIJĄ
+% --------------------------------------------------------------- %
 
 \subsection{Tiekimo grandinės atvejis pritaikius IOTA technologiją}
