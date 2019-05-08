@@ -6,12 +6,14 @@
 
 Prieš pradėdami modeliuoti IOTA taikymą, turime apsibrėžti sąlygas, kada tą apsimokėtų daryti. Technologiją galime taikyti bet kurioje tiekimo grandinėje, kuri tenkina bent vieną sąlygą:
 \begin{itemize}
-    \item Reikalingi jutiklių prietaisų arba prietaisais nepamatuojami duomenys, pavyzdžiui RFID jutiklis, matuojantis temperatūrą konteineryje.
+    \item Reikalingi jutikliais arba kitais prietaisais pamatuojami duomenys, pavyzdžiui RFID jutiklis, matuojantis temperatūrą konteineryje.
     \item Atliekamos finansinės arba informacinės transakcijos. Pavyzdžiui, atsiskaitoma už paslaugas ar prekes.
     \item Reikalingas automatizuotas M2M bendravimas. Pavyzdžiui, vieni elektroniniai prietaisai bendrauja ar perduoda informaciją kitiems prietaisams be papildomo žmogaus įsikišimo.
-    \item Reikalingas absoliutus duomenų pastovumas, t.y. kad duomenų negalėtų pakoreguoti ar ištrinti absoliučiai niekas ir jie būtų prieinami amžinai.
-    \item reikalingi atlikti skaičiavimai, pavyzdžiui matematinės ir statistinės formulės priklausomai nuo daviklių duomenų.
+    \item Reikalingas absoliutus duomenų nekintamumas, t.y. kad duomenų negalėtų pakoreguoti ar ištrinti absoliučiai niekas ir jie būtų prieinami amžinai.
+    \item Reikalingi atlikti skaičiavimai, pavyzdžiui matematinės ir statistinės formulės priklausomai nuo daviklių duomenų.
 \end{itemize}
+
+Tiekimo grandinės atvejis buvo kuriamas šio darbo autoriaus, remiantis kelių šaltinių pavyzdinėmis idėjomis ir sujungus jas į vieną bendrą diagramą. Diagrama nebuvo siekiama pavaizduoti realaus pasaulio tiekimo grandinės pavyzdžio\footnote{Dėl konfidencialumo priežasčių įmonės nėra linkusios skelbti oficialių savo tiekimo grandinių modelių.}, o labiau siekta sukurti modelį, apimantį kuo daugiau skirtingų tiekimo grandinės fazių ir etapų, kad tai leistų geriau atskleisti IOTA technologijos panaudojamumą. Autoriaus nuomone modelis galėjo būti dar detalesnis, tačiau tai neatspindėtų norimos perteikti esmės.
 
 
 
@@ -21,7 +23,7 @@ Prieš pradėdami modeliuoti IOTA taikymą, turime apsibrėžti sąlygas, kada t
 
 \subsection{Tiekimo grandinės atvejis}
 
-Pabandykime sumodeliuoti paprastą tiekimo grandinę, kuri galėtų savo skirtinguose grandies etapuose būti praplėsta pritaikant naujas technologijas. Tokia tiekimo grandinė pavaizduota priede nr. 1. Šis teikimo grandinės atvejis vaizduoja supaprastintą vaisių tiekimo grandinę nuo sėklų įsigijimo iki kliento vaisių įsigijimo prekybos centre. Tiekimo grandinė realiame pasaulyje gali būti gerokai sudėtingesnė ir turėti skirtingų variacijų, tačiau pasirinktas atvejis siekiant įtraukti kuo daugiau skirtingų savo specifika etapų. Tiekimo grandinė išskaidyta į 15 diskrečių etapų, kurių kiekvienas aprašytas toliau:
+Pabandykime sumodeliuoti paprastą tiekimo grandinę, kuri galėtų savo skirtinguose grandies etapuose būti praplėsta pritaikant naujas technologijas. Tokia tiekimo grandinė pavaizduota priede nr. 1. Šis teikimo grandinės atvejis vaizduoja supaprastintą vaisių tiekimo grandinę nuo sėklų įsigijimo iki kliento vaisių įsigijimo prekybos centre. Tiekimo grandinė išskaidyta į 15 diskrečių etapų, kurių kiekvienas aprašytas toliau:
 \begin{enumerate}
     \item Ūkininkas superka sėklas iš tiekėjo. Prieš tai yra sudaromas raštiškas kontraktas tarp sėklų tiekėjo ir ūkininko, kad už tam tikrą kainą ūkininkas gaus tam tikrą kiekį sėklų. Be to, sutartyje gali būti papildomų sąlygų, jei sėklų tiekėjas laiku neturės sėklų arba jų kokybė neatitiks keliamų standartų.
     \item Ūkininkas nurenka pasėtą derlių. Tačiau prieš tai ūkininkas pasėja vaisių sėklas, sudaro tinkamas sąlygas jų auginimui, naudoja specialias trąšas ir atėjus laikui vaisius nurenka ir sandėliuoja.
@@ -47,3 +49,15 @@ Pabandykime sumodeliuoti paprastą tiekimo grandinę, kuri galėtų savo skirtin
 % --------------------------------------------------------------- %
 
 \subsection{Tiekimo grandinės atvejis pritaikius IOTA technologiją}
+
+Pasinaudodami 2.2.2. skyriaus ir jo poskyriuose nurodytomis IOTA savybėmis, galime apsibrėžti, kokius procesus galima pagerinti ir kaip:
+\begin{itemize}
+    \item MAM kanalai
+    \item Išmanieji kontraktai
+    \item Orakulai
+    \item Veikimas neprisijungus prie interneto
+    \item Paskirstyti skaičiavimai
+    \item Ekonominis klasterizavimas
+    \item Nemokamų transakcijų kūrimas
+    \item M2M komunikacija
+\end{itemize}
