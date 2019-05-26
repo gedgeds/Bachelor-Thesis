@@ -1,10 +1,42 @@
+% --------------------------------------------------------------- %
+%                              IŠVADOS                           
+% --------------------------------------------------------------- %
+
 \sectionnonum{Išvados}
 
-Išvados:
+%------------------ IŠVADOS ------------------
+Darbo išvados:
 \begin{enumerate}
-    \item išvada
+    \item Palyginus blokų grandinę ir orientuotą grafą be ciklų nustatyta, kad IOTA yra pranašesnė už kitas darbe nagrinėtas platformas tiekimo grandinėje, nes jos architektūra ir konsensusas įgalina nemokamas transakcijas bei likviduoja transakcijų per sekundę lubas;
+    \item Sukonstravus IOTA platformos taikymo scenarijų modelius pavyzdinėje tiekimo grandinėje buvo pastebėta, jog:
+    \begin{enumerate}[label*=\arabic*.,topsep=0pt]
+        \item IOTA platformą galima taikyti tiekimo grandinių procesuose;
+        \item Qubic, MAM ir funkcionavimas neprisijungus yra tinkamos savybės taikymui tiekimo grandinėse;
+        \item Esminė ir dažniausiai taikytina IOTA savybė tiekimo grandinėje yra MAM kanalai;
+    \end{enumerate} 
+    \item Kuriant potencialios sistemos užduotis ir veiklas pastebėta, kad:
+    \begin{enumerate}[label*=\arabic*.,topsep=0pt]
+        \item MAM kanalo prenumerata, dokumentų patikra ir kriptovaliutos gavimas yra dažniausiai naudojamos veiklos, nes kiekvieną iš jų vykdo 90\% visų pavyzdinės tiekimo grandinės veikėjų;
+        \item Prekybos centras ir supirkėjas turi daugiausiai veiklų ir atsakomybių sistemoje.
+        % Galima tikyti tada, kai.. užtikrinama X..
+    \end{enumerate}
 \end{enumerate}
+\bigskip
 
-%Išvadų skyriuje daromi nagrinėtų problemų sprendimo metodų palyginimai, siūlomos rekomendacijos, akcentuojamos naujovės. Išvados pateikiamos sunumeruoto (gali būti hierarchinis) sąrašo pavidalu. Darbo išvados turi atitikti darbo tikslą.
+%------------------ REKOMENDACIJOS ------------------
+Autoriaus pateikiamos rekomendacijos:
+\begin{enumerate}
+    \item Įgyvendinant potencialią sistemą būtų svarbu, kad viešą kanalą kurtų ir duomenis juo siųstų visi grandinės nariai. Tai padarytų duomenų prieinamumą galutiniam pirkėjui nuosekliu procesu;
+    \item Išmanųjį kontraktą būtų patogu traktuoti kaip patikimą vieną orakulą, jeigu jam duomenis siųstų keli orakulai;
+    \item Siekiant labiau decentralizuoti tinklą, išmaniojo kontrakto duomenų, gautų iš orakulų apdorojimą ir skaičiavimų rezultato pateikimą vertėtų perduoti taip pat tinklui. Vietoje vieno skaičiavimo įrenginio, darbus būtų galima deleguoti tinkle esantiems nariams, kuriems už suteikiamas paslaugas išmanusis kontraktas atsiskaitytų kriptovaliuta.
+\end{enumerate} 
+\bigskip
 
-Tolimesnės tyrinėjimo kryptys:
+%------------------ TOLIMESNĖS KRYPTYS ------------------
+Taip pat apžvelgiamos kitos su darbo tema susijusios ir galimos tolimesnės tyrinėjimų temos bei kryptys, kurių autorius šiame darbe nenagrinėjo arba nagrinėjo mažai:
+\begin{enumerate}
+    \item IOTA platforma paremtos tiekimo grandinės valdymo sistemos kūrimas.
+    \item IOTA platforma paremtos ir tradicinių tiekimo grandinės valdymo sistemų palyginimas.
+    \item Ekonominio klasterizavimo įtaka IOTA tinklo greičiui ir atsparumui atakoms.
+    \item Mašinų tarpusavio bendravimo automatizavimas taikant IOTA platformą.
+\end{enumerate} 

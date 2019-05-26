@@ -2,7 +2,7 @@
 %           2. IŠSKIRSTYTO TRANSAKCIJŲ ŽURNALO TECHNOLOGIJA
 % --------------------------------------------------------------- %
 
-\section {išskirstyto transakcijų žurnalo technologija}
+\section {Išskirstyto transakcijų žurnalo technologija}
 
 Kadangi problemos tiekimo grandinėse yra nepašalintos, tai reiškia, kad tradiciniai sprendimai ir technologijos, naudojamos jose, vis dėlto neveikia taip gerai, kaip norėtųsi. Tačiau bet kuriuo atveju, norint vykdyti įmonės apskaitą ir talpinti įrašus ar transakcijas, teks naudotis transakcijų žurnalo (angl. \textit{Ledger}) paslaugomis. O tas, kas teikia transakcijų žurnalo paslaugas, turės įgyvendinti duomenų bazę, kad būtų galima valdyti duomenis.
 
@@ -38,7 +38,7 @@ Be to, visi šie duomenys turėtų būti saugomi ilgą laiką. Įmonėms gali pr
 
 Nors duomenų apdorojimo greitis yra ko gero svarbiausias kriterijus, į kurį turi atsižvelgti technologijos, DLT iš savęs nepateikia sprendimo greičio klausimui spręsti. Tai – konkrečios DLT architektūros klausimas, nuo kurios ir priklauso, kokie sprendimai bus įgyvendinami, norint išpildyti greičio reikalavimus.
 
-Tradicinės transakcijų žurnalų sistemos iš esmės yra išsprendusios greičio klausimus ir gali apdoroti tūkstančius transakcijų per sekundę\footnote{Mokėjimų platformos, tokios kaip PayPal, vykdo apie 136 TPS, o Visa nuo 2 tūkst. TPS iki 56 tūkst. TPS \cite{herrera2016privacy}.} ar net milijonus transakcijų per sekundę \footnote{Šiuos rodiklius demonstruoja duomenų bazių valdymo sistemos, tokios kaip Oracle: https://blogs.oracle.com/timesten/scaling-sql-to-millions-of-transactions-per-second-with-a-single-database. Žiūrėta 2019-05-14.}. Tačiau naudojant DLT, dėl savo subtilybių ir specifikos, greičio problemos atsiranda kitu pavidalu. Kiekvieno įrašo padarymas yra konsensuso algoritmo (angl. \textit{Consensus Algorithm}) dalis. Konsensuso algoritmas – tai protokolas, kuris pasirūpina, kad visi tinklo nariai sinchronizuotųsi tarpusavyje ir prieitų bendrą sutarimą įvertinant, kurios transakcijos yra tinkamos, kad jas būtų galima pridėti į transakcijų žurnalą \cite{cachin2017blockchain}. 
+Tradicinės transakcijų žurnalų sistemos iš esmės yra išsprendusios greičio klausimus ir gali apdoroti tūkstančius transakcijų per sekundę\footnote{Mokėjimų platformos, tokios kaip PayPal, vykdo apie 136 TPS, o Visa nuo 2 tūkst. TPS iki 56 tūkst. TPS \cite{herrera2016privacy}.} ar net milijonus transakcijų per sekundę \footnote{Šiuos rodiklius demonstruoja duomenų bazių valdymo sistemos, tokios kaip Oracle: https://blogs.oracle.com/timesten/scaling-sql-to-millions-of-transactions-per-second-with-a-single-database. Tikrinta 2019-05-14.}. Tačiau naudojant DLT, dėl savo subtilybių ir specifikos, greičio problemos atsiranda kitu pavidalu. Kiekvieno įrašo padarymas yra konsensuso algoritmo (angl. \textit{Consensus Algorithm}) dalis. Konsensuso algoritmas – tai protokolas, kuris pasirūpina, kad visi tinklo nariai sinchronizuotųsi tarpusavyje ir prieitų bendrą sutarimą įvertinant, kurios transakcijos yra tinkamos, kad jas būtų galima pridėti į transakcijų žurnalą \cite{cachin2017blockchain}. 
 
 
 
@@ -94,7 +94,7 @@ Yra du pagrindiniai DLT tipai. Tai blokų grandinės (angl. \textit{Blockchain})
 
 \subsubsection{Blokų grandinė}
 
-Šiuo metu yra daug blokų grandinių projektų, tačiau populiariausiomis ir stabiliausiomis išlieka dvi – Bitcoin ir Ethereum\footnote{Duomenys paimti iš: https://coinmarketcap.com. Žiūrėta 2019-05-14.}. Šios blokų grandinės veikia tokiu principu: blokų duomenų struktūros, kuriuose saugoma informacija, t.y. transakcijos bei kitos blokų grandinei operuoti reikalingos reikšmės, yra sujungtos tarpusavyje nuosekliai į vieną ilgą ir nenutrūkstamą seką (žr. 6 pav.)\footnote{Paveikslėlyje pavaizduota architektūra yra prototipinė autoriaus sukurta blokų grandinė. Realybėje egzistuojančių blokų grandinių architektūros yra kur kas sudėtingesnės.}. Vienintelis būdas sukurti naujus įrašus – surinkti juos į naują bloką ir prijungti jį prie paskutinio grandinėje esančio bloko.
+Šiuo metu yra daug blokų grandinių projektų, tačiau populiariausiomis ir stabiliausiomis išlieka dvi – Bitcoin ir Ethereum\footnote{Duomenys paimti iš: https://coinmarketcap.com. Tikrinta 2019-05-14.}. Šios blokų grandinės veikia tokiu principu: blokų duomenų struktūros, kuriuose saugoma informacija, t.y. transakcijos bei kitos blokų grandinei operuoti reikalingos reikšmės, yra sujungtos tarpusavyje nuosekliai į vieną ilgą ir nenutrūkstamą seką (žr. 6 pav.)\footnote{Paveikslėlyje pavaizduota architektūra yra prototipinė autoriaus sukurta blokų grandinė. Realybėje egzistuojančių blokų grandinių architektūros yra kur kas sudėtingesnės.}. Vienintelis būdas sukurti naujus įrašus – surinkti juos į naują bloką ir prijungti jį prie paskutinio grandinėje esančio bloko.
 
 \begin{figure}[H]
     \centering
@@ -152,7 +152,7 @@ Taigi matome, kad transakcijų greitis priklauso nuo šių pagrindinių priežas
     \item Mokesčio dydžio, kuris lemia, ar kasėjai įtrauks transakciją į bloką su 100\% tikimybe ir kaip greitai ji bus įtraukta.
 \end{itemize} 
 
-Žemiau pateikiama lentelė (žr. 1 lentelę) su Bitcoin ir Ethereum platformų rodiklių palyginimais\footnote{Autorius nepateikia vidutinės transakcijos mokesčio kainos, nes kriptovaliutų kaina ir transakcijos mokestis rinkoje yra labai nepastovūs. Ethereum: https://ethgasstation.info. Bitcoin: https://bitcoinfees.info}. Iš joje esančių duomenų seka maksimalus TPS greitis.
+Žemiau pateikiama lentelė (žr. 1 lentelę) su Bitcoin ir Ethereum platformų rodiklių palyginimais\footnote{Autorius nepateikia vidutinės transakcijos mokesčio kainos, nes kriptovaliutų kaina ir transakcijos mokestis rinkoje yra labai nepastovūs. Ethereum: https://ethgasstation.info. Bitcoin: https://bitcoinfees.info. Tikrinta: 2019-05-17.}. Iš joje esančių duomenų seka maksimalus TPS greitis.
 
 \begin{longtable}{|L{4cm}|L{5,3cm}|L{5,5cm}|}
 \caption{Bitcoin ir Ethereum rodiklių palyginimas}
@@ -183,7 +183,7 @@ Taigi matome, kad transakcijų greitis priklauso nuo šių pagrindinių priežas
     \item Mokesčiai už atliekamas transakcijas tikriausiai yra vienas iš labiausiai atgrasančių suvaržymų. Tikėtina, kad tam tikrais atvejais mokesčiai už transakcijas gali būti aukštesni už transportuojamų prekių kainą.
 \end{itemize} 
 
-Tam tikros blokų grandinės yra įgyvendinusios išmaniųjų kontraktų (angl. \textit{Smart contracts}) funkcionalumą, kuris praturtina technologijos potencialą ir savaime yra privalumas. Išmanieji kontraktai – sistemos, kurios automatiškai įvykdo veiksmus pagal prieš tai aprašytas taisykles \cite{buterin2013ethereum}.
+Tam tikros blokų grandinės yra įgyvendinusios išmaniųjų kontraktų (angl. \textit{Smart contracts}) funkcionalumą, kuris praturtina technologijos potencialą ir savaime yra privalumas. Išmanusis kontraktas – programinis kodas, kuris automatiškai vykdo komandas pagal prieš tai aprašytas taisykles \cite{buterin2013ethereum}.
 
 Ethereum išmanieji kontraktai įgalina automatizuotus kriptovaliutų pervedimus pagal programinį kodą, remiantis sugalvotais scenarijais. Tačiau jų realizavimas praktikoje kol kas atrodo neefektyvus. Visi tinklo nariai, norintys patikrinti bloko validumą, turintį savyje transakciją, kuri inicijuoja išmaniojo kontrakto vykdymą, turi vykdyti tą patį išmaniojo kontrakto kodą \cite{buterin2013ethereum}. Dėl šios priežasties vienos decentralizuotos programėlės (angl. \textit{Decentralized Application}), toliau - DApp, išpopuliarėjimas apkrovė ir smarkiai sulėtino Ethereum tinklą\footnote{https://cryptovest.com/news/ethereum-loses-to-cryptokitties-network-remains-slow. Tikrinta 2019-05-14.}.\pagebreak
 
@@ -268,7 +268,7 @@ Kitas svarbus aspektas – transakcijų mokestis. IOTA netaiko jokio transakcij�
 
 \subsubsubsection{Maskuotieji nustatytos tapatybės pranešimai}
 
-Tiekimo grandinėse nepaprastai svarbu duomenų atsekamumas. Daugumai grandinės narių svarbu matyti prekės judėjimą, t.y. kur ir kada prekė keliavo, kaip pasikeitė prekės laikinieji savininkai, kokia buvo prekės būsena skirtingais laiko momentais ir t.t. Be to, kai kurie duomenys yra jautrūs ir reikia suvaldyti kuri informacija kurioms šalims turi būti prieinama, o kuri – ne. Šį darbą dažnai tenka atlikti ranka, patikrinant skirtingus informacijos šaltinius.
+Tiekimo grandinėse nepaprastai svarbus duomenų atsekamumas. Daugumai grandinės narių svarbu matyti prekės judėjimą, t.y. kur ir kada prekė keliavo, kaip pasikeitė prekės laikinieji savininkai, kokia buvo prekės būsena skirtingais laiko momentais ir t.t. Be to, kai kurie duomenys yra jautrūs ir reikia suvaldyti, kuri informacija kurioms šalims turi būti prieinama, o kuri – ne. Šį darbą dažnai tenka atlikti ranka, patikrinant skirtingus informacijos šaltinius.
 
 IOTA šiai problemai spręsti yra sukūrusi maskuotus nustatytos tapatybės pranešimus (angl. \textit{Masked Authenticated Message}), toliau – MAM. Tai yra biblioteka, užšifruojanti, iššifruojanti ir nustatanti tapatybę duomenų, kuriuos yra norima publikuoti į IOTA raizginį \cite{andreas2017masked}. Publikuojant tokius užšifruotus duomenis, galima atskleisti specialų raktą prenumeratoriams (angl. \textit{Subscribers}), kurie turėtų teisę stebėti duomenis. Duomenų pranešėjas (angl. \textit{Publisher}) tam sukuria kanalą (angl. \textit{Channel}) \cite{ab2018iota}.
 

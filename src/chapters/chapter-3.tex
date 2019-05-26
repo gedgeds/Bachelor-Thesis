@@ -6,21 +6,6 @@
 
 
 
-% IŠVADOS Prieš pradedant modeliuoti IOTA taikymą, reikia apsibrėžti sąlygas, kada tą apsimokėtų daryti. 2.2.2. skyriaus poskyriuose buvo analizuojamos IOTA savybės, kurias galima taikyti tiekimo grandinėse. Technologiją yra naudinga taikyti bet kurioje tiekimo grandinėje, kuri tenkina bent vieną sąlygą:
-%\begin{itemize}
-%    \item Atliekamos finansinės arba informacinės transakcijos. Pavyzdžiui, atsiskaitoma už paslaugas ar prekes, pranešame apie prekės atsiėmimą.
-%    \item Reikalingas absoliutus duomenų nekintamumas, t.y. kad duomenų negalėtų pakoreguoti ar ištrinti absoliučiai niekas ir jie būtų prieinami amžinai.
-%    \item Svarbus duomenų saugumas. Yra poreikis apsaugoti duomenis, kad prieigą prie jų turėtų tik įgaliotos šalys ir niekas daugiau.
-%    \item Transportuojant krovinius atsiduriama zonose, kuriose nėra ryšio.
-%    \item Reikalingi jutikliais arba kitais prietaisais pamatuojami duomenys, pavyzdžiui RFID jutiklis, matuojantis temperatūrą konteineryje.
-%    \item Reikalingi jutikliais arba kitais prietaisais nepamatuojami duomenys, pavyzdžiui informacija apie stichines nelaimes.
-%    \item Reikalingas automatizuotas M2M bendravimas. Pavyzdžiui, vieni elektroniniai prietaisai bendrauja ar perduoda informaciją kitiems prietaisams be papildomo žmogaus įsikišimo.
-%    \item Yra pildomi fiziniai dokumentai, kuriuos svarbu išsaugoti.
-%    \item Svarbus fizinių produktų ir duomenų apie juos atsekamumas. Pavyzdžiui, susiduriama su muitinėmis, kuriose vykdoma patikra.
-%\end{itemize}
-
-
-
 % --------------------------------------------------------------- %
 %                   3.1. TIEKIMO GRANDINĖS ATVEJIS
 % --------------------------------------------------------------- %
@@ -29,7 +14,7 @@
 
 Tiekimo grandinės pavyzdinis atvejis buvo kuriamas šio darbo autoriaus, remiantis kelių šaltinių pavyzdinėmis idėjomis \cite{christopher2016logistics, webber2009building, patrick2017continuous, justin2016customer}. Naudojantis jomis buvo sukurta viena bendra diagrama (žr. priedas nr. 1). 
 
-Diagrama nebuvo siekiama pavaizduoti realaus pasaulio tiekimo grandinės pavyzdžio\footnote{Dėl konfidencialumo priežasčių įmonės nėra linkusios skelbti oficialių savo tiekimo grandinių modelių.}, o labiau siekta sukurti modelį, apimantį kuo daugiau skirtingų tiekimo grandinės fazių ir etapų, kad tai leistų geriau atskleisti IOTA platformos panaudojamumą. Autoriaus nuomone, modelis galėjo būti dar detalesnis, tačiau tai nebūtinai atspindėtų norimos perteikti esmės.
+Diagrama nebuvo siekiama pavaizduoti realaus pasaulio tiekimo grandinės pavyzdžio\footnote{Dėl konfidencialumo priežasčių įmonės nėra linkusios skelbti oficialių savo tiekimo grandinių modelių.}, o labiau siekta sukurti modelį, apimantį kuo daugiau skirtingų tiekimo grandinės fazių ir etapų, kad tai leistų geriau atskleisti IOTA platformos panaudojamumą. Pateiktas modelis galėjo būti dar detalesnis, tačiau tai nebūtinai atspindėtų norimos perteikti esmės.
 
 Šis teikimo grandinės atvejis vaizduoja supaprastintą vaisių tiekimo grandinę nuo ūkininko, įsigyjančio sėklas iki kliento, perkančio vaisius prekybos centre. Tiekimo grandinė išskaidyta į 15 diskrečių etapų, kurių kiekvienas aprašytas atitinkamai.
 
@@ -43,7 +28,7 @@ Diagrama nebuvo siekiama pavaizduoti realaus pasaulio tiekimo grandinės pavyzd�
 
 \medskip \noindent \textbf{5. Vaisiai transportuojami iki fabriko.}
 
-\medskip \noindent \textbf{6. Vaisiai apdirbami (pagaminami jų išvestiniai produktai) ir sandėliuojami.} Priklausomai nuo vaisių supirkėjo veiklos srities, jis gali vaisius paruošti pardavimui, pvz. apipurkšti cheminiu produktu, suteikiantį blizgumą ar atsparumą, taip pat apdirbti juos supjaustant, panaudojant kaip sudedamąją dalį kituose produktuose ir t.t. Galutiniai produktai sandėliuojami fabriko patalpose, kol atvyks kurjeriai, atsakingi už prekių transportavimą į prekybos centrus. Su prekybos centrais yra pasirašomi kontraktai, nustatantys kokius produktus už kokią kainą vaisių supirkėjas parduos prekybos centrui.
+\medskip \noindent \textbf{6. Vaisiai apdirbami (pagaminami jų išvestiniai produktai) ir sandėliuojami.} Priklausomai nuo vaisių supirkėjo veiklos srities, jis gali vaisius paruošti pardavimui, pvz. apipurkšti cheminiu produktu, suteikiantį blizgumą ar atsparumą, taip pat apdirbti juos supjaustant, panaudojant kaip sudedamąją dalį kituose produktuose ir t.t. Galutiniai produktai sandėliuojami fabriko patalpose, kol atvyks kurjeriai, atsakingi už prekių transportavimą į prekybos centrus. Su prekybos centrais yra pasirašomi kontraktai, nustatantys, kokius produktus už kokią kainą vaisių supirkėjas parduos prekybos centrui.
 
 \medskip \noindent \textbf{7. Apdirbti vaisiai pakraunami į sunkvežimį.} Čia kurjeris gali būti samdomas tuo pačiu principu, kaip ir 4 etape.
 
@@ -66,7 +51,7 @@ Diagrama nebuvo siekiama pavaizduoti realaus pasaulio tiekimo grandinės pavyzd�
 
 
 % --------------------------------------------------------------- %
-%   3.2. TIEKIMO GRANDINĖS ATVEJIS PRITAIKIUS IOTA PLATFORMĄ
+%    3.2. TIEKIMO GRANDINĖS ATVEJIS PRITAIKIUS IOTA PLATFORMĄ
 % --------------------------------------------------------------- %
 
 \subsection{Tiekimo grandinės atvejis pritaikius IOTA platformą}
@@ -106,7 +91,7 @@ Antrojo etapo papildytas modelis, \textit{Ūkininkas nurenka pasėtą derlių} (
 \begin{enumerate}
     \item Iš pradžių ūkininkas inicijuoja privatų MAM kanalą, kuriuo siųs duomenis potencialiems derliaus supirkėjams. Ūkininkas perduoda kanalo prenumeratos raktą supirkėjui.
     \item Ten, kur yra pasodintos sėklos, pastatomi RFID jutikliai. Šie jutikliai siunčia kanalu duomenis apie vaisių auginimo sąlygas: drėgmę, temperatūrą ir kt. Jutiklius galima būtų sukonfigūruoti, kad kiekvienas atskirai siųstų duomenis į MAM kanalą, arba perduotų duomenis į ūkininko kompiuterį, kuris perimtų duomenų publikavimą.
-    \item Esant poreikiui, specialūs IOTA orakulų rolę prisiėmę inspektoriai gali atlikti patikrą, ar RFID siunčiami duomenys nėra klastojami ir savo matavimus taip pat patalpinti IOTA raizginyje. Specialūs orakulai galėtų prisidėti ir prie kitų reikalavimų laikymosi patikros. Pavyzdžiui, ar ūkininkas auginimo metu neteršia aplinkos, ar nėra darbinami vaikai ir t.t. Orakulai gali prisidėti ir prie draudimo įmonių veiklos. Esant sausrai ir ūkininkui nepristačius pakankamai derliaus, draudimo kompanijos, gavusios patvirtinimą iš orakulų apie stichinę nelaimę, galėtų padengti ūkininkų nuostolius. Orakulų turėtų dalyvauti kuo daugiau, šitaip užtikrinant, kad daugumos jų parodymai yra objektyvūs ir sutampa. Be orakulų būtų sunku nustatyti, ar RFID duomenys, kuriuos teikia ūkininkas yra nepadirbti. Orakulas duomenis gali perduoti naudojant MAM kanalą.
+    \item Esant poreikiui, specialūs IOTA orakulų rolę prisiėmę inspektoriai gali atlikti patikrą, ar RFID siunčiami duomenys nėra klastojami ir savo matavimus taip pat patalpinti IOTA raizginyje. Specialūs orakulai galėtų prisidėti ir prie kitų reikalavimų laikymosi patikros. Pavyzdžiui, ar ūkininkas auginimo metu neteršia aplinkos, ar nėra darbinami vaikai ir t.t. Orakulai gali prisidėti ir prie draudimo įmonių veiklos. Esant sausrai ir ūkininkui nepristačius pakankamai derliaus, draudimo kompanijos, gavusios patvirtinimą iš orakulų apie stichinę nelaimę, galėtų padengti ūkininkų nuostolius. Orakulų turėtų dalyvauti kuo daugiau, šitaip užtikrinant, kad daugumos jų parodymai yra objektyvūs ir sutampa. Be orakulų būtų sunku nustatyti, ar RFID duomenys, kuriuos teikia ūkininkas, yra nepadirbti. Orakulas duomenis gali perduoti naudojant MAM kanalą.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -123,7 +108,7 @@ Antrojo etapo papildytas modelis, \textit{Ūkininkas nurenka pasėtą derlių} (
 
 \subsubsection{Trečias etapas}
 
-Trečiasis etapo, \textit{Ūkininkas parduoda derlių supirkėjui} modelio papildymas yra beveik identiškas pirmojo etapo modelio papildymui. Šiuo atveju kontraktas tarp ūkininko ir supirkėjo gali būti sudaromas prieš 2, o esant poreikiui ir prieš 1 etapą tam, kad būtų galima lengviau sekti įsipareigojimų vykdymą.
+Trečiojo etapo, \textit{Ūkininkas parduoda derlių supirkėjui} modelio papildymas yra beveik identiškas pirmojo etapo modelio papildymui. Šiuo atveju kontraktas tarp ūkininko ir supirkėjo gali būti sudaromas prieš antrą, o esant poreikiui, ir prieš pirmą etapą tam, kad būtų galima lengviau sekti įsipareigojimų vykdymą.
 
 Svarbu pabrėžti, kad sutarčių ir kontraktų gali būti daugiau nei vienas. Į IOTA tinklą tiekimo grandinės nariai gali įkelti neribotą kiekį bet kokio tipo svarbių dokumentų.
 
@@ -160,7 +145,7 @@ Ketvirtojo ir penktojo etapų, \textit{Kurjeris pakrauna vaisius į sunkvežimį
 \begin{enumerate}
     \item Kaip ir pirmajame panaudojimo atvejo etape, yra sudaromas kontraktas. Fabrikas (supirkėjas) susitaria su prekybos centru, kad už tam tikrą sumą tam tikru metu bus parduotas tam tikras kiekis perdirbtų arba paruoštų vaisių. Kontraktas pasirašomas abiejų šalių, o elektroninė versija užšifruojama raktu ir gautas šifras patalpinamas į IOTA tinklą \footnote{Kontraktas gali būti sudarytas gerokai anksčiau, pavyzdžiui prieš 1 arba 2 etapą.}. Niekas iš IOTA tinklo narių, išskyrus abi kontrakto šalis, negali peržiūrėti kontrakto turinio. Kontrakto šalys gali įrodyti turimo kontrakto teisiškumą užšifruodami šią kopiją ir patikrindami gauto šifro reikšmę su raizginyje esančiu šifru.
     \item Fabrikas sukuria privatų kanalą, kurį prenumeruoja prekybos centrai\footnote{Jeigu krovinius transportuoja samdomi kurjeriai iš logistikos įmonių, kanalu duomenys gali būti siunčiami ir šiems atstovams, t.y. koks krovinių tipas, kada krovinys paruoštas transportavimui ir t.t.}. Kanalu fabrikas perduoda informaciją apie tai, kokie produktai kuriami, kurioje gamybos stadijoje šie produktai yra esamu laiko momentu, kokiais standartais vadovaujantis apdirbami ir t.t.
-    \item Fabrike įtaisyti RFID jutikliai kanalu taip pat perduoda informaciją, tokią kaip gamybos sąlygas skirtinguose etapuose.
+    \item Fabrike įtaisyti RFID jutikliai MAM kanalu taip pat perduoda informaciją, pavyzdžiui, gamybos sąlygas skirtinguose etapuose.
     \item Esant poreikiui inspektoriai, kitaip orakulai, gali patikrinti tiek 2, tiek 3 žingsnyje fabriko teikiamą informaciją ir patalpinti į IOTA raizginį prekybos centrams pasitikrinti.
 \end{enumerate}
 
