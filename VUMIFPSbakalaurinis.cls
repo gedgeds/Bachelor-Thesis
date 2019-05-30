@@ -313,3 +313,13 @@
 % Tarpai tarp išnašų eilučių nustatomi į 1.5 eilutės
 \let\oldfootnote\footnote
 \renewcommand{\footnote}[1]{\oldfootnote{\onehalfspacing #1}}
+
+
+\let\oldFootnote\footnote
+\newcommand\nextToken\relax
+
+\renewcommand\footnote[1]{%
+    \oldFootnote{#1}\futurelet\nextToken\isFootnote}
+
+\newcommand\isFootnote{%
+    \ifx\footnote\nextToken\textsuperscript{,}\fi}

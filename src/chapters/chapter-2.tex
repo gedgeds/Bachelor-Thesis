@@ -2,15 +2,15 @@
 %           2. IŠSKIRSTYTO TRANSAKCIJŲ ŽURNALO TECHNOLOGIJA
 % --------------------------------------------------------------- %
 
-\section {Išskirstyto transakcijų žurnalo technologija}
+\section {Išskirstyto transakcijų žurnalo technologija} \label{section:dlt}
 
 Kadangi problemos tiekimo grandinėse yra nepašalintos, tai reiškia, kad tradiciniai sprendimai ir technologijos, naudojamos jose, vis dėlto neveikia taip gerai, kaip norėtųsi. Tačiau bet kuriuo atveju, norint vykdyti įmonės apskaitą ir talpinti įrašus ar transakcijas, teks naudotis transakcijų žurnalo (angl. \textit{Ledger}) paslaugomis. O tas, kas teikia transakcijų žurnalo paslaugas, turės įgyvendinti duomenų bazę, kad būtų galima valdyti duomenis.
 
-Tačiau pagrindinė problema kyla dėl to, kad dalyvaujant pirkėjams ir pardavėjams, bei fiksuojant atliekamas transakcijas, yra reikalingas tarpininkas \cite{gao2018coc}, kuriuo pasitikėtų visos sistema besinaudojančos šalys. Transakcijų žurnalo centralizuotas valdytojas savaime tampa vienvaldžiu tarpininku ir vieninteliu tiesos šaltiniu (angl. \textit{Single source of truth}), o tai suteikia perteklinę įtaką ir galią įrašų manipuliavimui bei kitas potencialias grėsmes \cite{jiang2017much, shyamasundar2018blockchain}. 
+Tačiau pagrindinė problema kyla dėl to, kad dalyvaujant pirkėjams ir pardavėjams, bei fiksuojant atliekamas transakcijas, yra reikalingas tarpininkas~\cite{gao2018coc}, kuriuo pasitikėtų visos sistema besinaudojančos šalys. Transakcijų žurnalo centralizuotas valdytojas savaime tampa vienvaldžiu tarpininku ir vieninteliu tiesos šaltiniu (angl. \textit{Single source of truth}), o tai suteikia perteklinę įtaką ir galią įrašų manipuliavimui bei kitas potencialias grėsmes~\cite{jiang2017much, shyamasundar2018blockchain}. 
 
-Vienas populiariausių transakcijų žurnalo tarpininko pavyzdžių – bankas. Bankai yra tarpininkai tarp skirtingų šalių, kurios nori atlikti transakcijas tarpusavyje bei laikyti įrašus apie turimą turtą. Bankai sėkmingai gyvuoja dėl to, kad naudotojai, neturėdami kitos išeities ar alternatyvų, pasitiki jais. Tačiau šis pasitikėjimas turi ir savų rizikų. Bankinė institucija potencialiai gali susikompromituoti ir pradėti keisti, ištrinti įrašus savo naudai, taikyti mokesčius už tarpininkavimą ir pasisavinti turtą \cite{shyamasundar2018blockchain}. Tai yra priežastys, dėl kurių transakcijų žurnalo naudotojai negali iki galo pasikliauti tokiais tarpininkais.
+Vienas populiariausių transakcijų žurnalo tarpininko pavyzdžių – bankas. Bankai yra tarpininkai tarp skirtingų šalių, kurios nori atlikti transakcijas tarpusavyje bei laikyti įrašus apie turimą turtą. Bankai sėkmingai gyvuoja dėl to, kad naudotojai, neturėdami kitos išeities ar alternatyvų, pasitiki jais. Tačiau šis pasitikėjimas turi ir savų rizikų. Bankinė institucija potencialiai gali susikompromituoti ir pradėti keisti, ištrinti įrašus savo naudai, taikyti mokesčius už tarpininkavimą ir pasisavinti turtą~\cite{shyamasundar2018blockchain}. Tai yra priežastys, dėl kurių transakcijų žurnalo naudotojai negali iki galo pasikliauti tokiais tarpininkais.
 
-Neseniai vis daugiau susidomėjimo susilaukė išskirstyto transakcijų žurnalo technologija (angl. \textit{Distributed Ledger Technology}), toliau – DLT. Pagrindinė priežastis, kodėl ji atkreipė rinkos, o ypač tiekimo grandinėse ir logistikoje esančių dalyvių dėmesį, yra jos technologinė prasmė. Vienai šaliai priklausantis centralizuotas transakcijų žurnalas pakeičiamas į išskirstytą transakcijų žurnalą, kuris nepriklauso jokiam savininkui, tačiau visi tinklo nariai turi jo kopijas \cite{shyamasundar2018blockchain}. Tai reiškia pagrindinės problemos sprendimą – pašalintą trečiųjų šalių poreikį \cite{shyamasundar2018blockchain}. DLT naudojančiai sistemai nebereikia administravimo, o tuo pačiu ir tarpininko mokesčio. Galiausiai užtikrinamas skaidrumas, pašalinant grėsmę, kad tarpininkas piktavališkai išnaudos turimą galią.
+Neseniai vis daugiau susidomėjimo susilaukė išskirstyto transakcijų žurnalo technologija (angl. \textit{Distributed Ledger Technology}), toliau – DLT. Pagrindinė priežastis, kodėl ji atkreipė rinkos, o ypač tiekimo grandinėse ir logistikoje esančių dalyvių dėmesį, yra jos technologinė prasmė. Vienai šaliai priklausantis centralizuotas transakcijų žurnalas pakeičiamas į išskirstytą transakcijų žurnalą, kuris nepriklauso jokiam savininkui, tačiau visi tinklo nariai turi jo kopijas~\cite{shyamasundar2018blockchain}. Tai reiškia pagrindinės problemos sprendimą – pašalintą trečiųjų šalių poreikį~\cite{shyamasundar2018blockchain}. DLT naudojančiai sistemai nebereikia administravimo, o tuo pačiu ir tarpininko mokesčio. Galiausiai užtikrinamas skaidrumas, pašalinant grėsmę, kad tarpininkas piktavališkai išnaudos turimą galią.
 
 
 
@@ -18,7 +18,7 @@ Neseniai vis daugiau susidomėjimo susilaukė išskirstyto transakcijų žurnalo
 %           2.1. IŠSKIRSTYTO TRANSAKCIJŲ ŽURNALO SAVYBĖS
 % --------------------------------------------------------------- %
 
-\subsection{Išskirstyto transakcijų žurnalo savybės}
+\subsection{Išskirstyto transakcijų žurnalo savybės} \label{subsection:dlt-properties}
 
 Nors pagrindinis DLT išskirtinumas yra tarpininko pašalinimas, jos unikalumas ir ypatybės tuo neapsiriboja. Šią technologiją būtų logiška tirti iš reikalavimų perspektyvos, kurie kyla iš tikimo grandinėse dalyvaujančių suinteresuotų šalių poreikių. Pagrindiniai poreikiai ir DLT savybės nagrinėjamos tolimesniuose poskyriuose.
 
@@ -28,17 +28,17 @@ Nors pagrindinis DLT išskirtinumas yra tarpininko pašalinimas, jos unikalumas 
 %                           2.1.1. GREITIS
 % --------------------------------------------------------------- %
 
-\subsubsection{Greitis}
+\subsubsection{Greitis} \label{subsection:dlt-speed}
 
-Šio darbo įžangoje jau buvo pabrėžta, kokio dydžio ir masto informacijos srautai bei transakcijų kiekiai vyrauja tiekimo grandinėse. Naudojamas transakcijų žurnalas turėtų būti labai greitas, t.y. gebėti apdoroti šimtus tūkstančių įrašų per labai trumpą laiko tarpą, tiek juos rašant, tiek nuskaitant. Šis rodiklis gali būti matuojamas transakcijomis per sekundę (angl. \textit{Transactions per second}), toliau – TPS, nusakančiu kaip greitai įrašas atsiduria transakcijų žurnale. Natūralu, kad kuo ilgesnis laukimo laikas, tuo daugiau nuostolių gali patirti transakcijų žurnalo naudotojai. Ateityje šie apkrovos rodikliai turėtų nenumaldomai augti dėl vis labiau taikomo daiktų interneto \cite{kaur2018edge}. 
+Šio darbo įžangoje jau buvo pabrėžta, kokio dydžio ir masto informacijos srautai bei transakcijų kiekiai vyrauja tiekimo grandinėse. Naudojamas transakcijų žurnalas turėtų būti labai greitas, t.y. gebėti apdoroti šimtus tūkstančių įrašų per labai trumpą laiko tarpą, tiek juos rašant, tiek nuskaitant. Šis rodiklis gali būti matuojamas transakcijomis per sekundę (angl. \textit{Transactions per second}), toliau – TPS, nusakančiu kaip greitai įrašas atsiduria transakcijų žurnale. Natūralu, kad kuo ilgesnis laukimo laikas, tuo daugiau nuostolių gali patirti transakcijų žurnalo naudotojai. Ateityje šie apkrovos rodikliai turėtų nenumaldomai augti dėl vis labiau taikomo daiktų interneto~\cite{kaur2018edge}. 
 
 Vienas iš įrašų kūrimo pavyzdžių – radijo dažnio identifikavimo (angl. \textit{Radio Frequency Identification}) technologijos, toliau – RFID. Jeigu kiekviename konteineryje, maisto plantacijose, fabrikuose ir t.t. būtų naudojamas vienas ar keli RFID davikliai, kurie paneštų savo būseną numatytu laiko periodu, tai lemtų milijardinius aktyvių tinkle esančių dalyvių kiekius per parą pasauliniu mastu.
 
-Be to, visi šie duomenys turėtų būti saugomi ilgą laiką. Įmonėms gali prireikti prieš kelis metus atliktų transakcijų, vykdytų operacijų arba individualių RFID daviklių istorinių duomenų. Svarbus ir duomenų atsekamumas, kad būtų galima stebėti krovinių kelionę ir būseną, net jei šie duomenys buvo kaupiami tam tikrose vietose neturint interneto ryšio. Greitas ir stabilus visų šių duomenų valdymas tampa be galo sudėtingu IT infrastruktūriniu uždaviniu.
+Be to, visi šie duomenys turėtų būti saugomi ilgą laiką. Įmonėms gali prireikti prieš kelis metus atliktų transakcijų, vykdytų operacijų arba individualių RFID daviklių istorinių duomenų. Svarbus ir duomenų atsekamumas, kad būtų galima stebėti krovinių kelionę ir būseną, net jei šie duomenys buvo kaupiami tam tikrose vietose neturint interneto ryšio. Greitas ir stabilus visų šių duomenų valdymas tampa sudėtingu IT infrastruktūriniu uždaviniu.
 
 Nors duomenų apdorojimo greitis yra ko gero svarbiausias kriterijus, į kurį turi atsižvelgti technologijos, DLT iš savęs nepateikia sprendimo greičio klausimui spręsti. Tai – konkrečios DLT architektūros klausimas, nuo kurios ir priklauso, kokie sprendimai bus įgyvendinami, norint išpildyti greičio reikalavimus.
 
-Tradicinės transakcijų žurnalų sistemos iš esmės yra išsprendusios greičio klausimus ir gali apdoroti tūkstančius transakcijų per sekundę\footnote{Mokėjimų platformos, tokios kaip PayPal, vykdo apie 136 TPS, o Visa nuo 2 tūkst. TPS iki 56 tūkst. TPS \cite{herrera2016privacy}.} ar net milijonus transakcijų per sekundę \footnote{Šiuos rodiklius demonstruoja duomenų bazių valdymo sistemos, tokios kaip Oracle: https://blogs.oracle.com/timesten/scaling-sql-to-millions-of-transactions-per-second-with-a-single-database. Tikrinta 2019-05-14.}. Tačiau naudojant DLT, dėl savo subtilybių ir specifikos, greičio problemos atsiranda kitu pavidalu. Kiekvieno įrašo padarymas yra konsensuso algoritmo (angl. \textit{Consensus Algorithm}) dalis. Konsensuso algoritmas – tai protokolas, kuris pasirūpina, kad visi tinklo nariai sinchronizuotųsi tarpusavyje ir prieitų bendrą sutarimą įvertinant, kurios transakcijos yra tinkamos, kad jas būtų galima pridėti į transakcijų žurnalą \cite{cachin2017blockchain}. 
+Tradicinės transakcijų žurnalų sistemos iš esmės yra išsprendusios greičio klausimus ir gali apdoroti tūkstančius transakcijų per sekundę\footnote{Mokėjimų platformos, tokios kaip PayPal, vykdo apie 136 TPS, o Visa nuo 2 tūkst. TPS iki 56 tūkst. TPS~\cite{herrera2016privacy}.} ar net milijonus transakcijų per sekundę\footnote{Šiuos rodiklius demonstruoja duomenų bazių valdymo sistemos, tokios kaip Oracle: \href{https://blogs.oracle.com/timesten/scaling-sql-to-millions-of-transactions-per-second-with-a-single-database}{https://blogs.oracle.com/ timesten/scaling-sql-to-millions-of-transactions-per-second-with-a-single-database} [žiūrėta 2019-05-14].}. Tačiau naudojant DLT, dėl savo subtilybių ir specifikos, greičio problemos atsiranda kitu pavidalu. Kiekvieno įrašo padarymas yra konsensuso algoritmo (angl. \textit{Consensus Algorithm}) dalis. Konsensuso algoritmas – tai protokolas, kuris pasirūpina, kad visi tinklo nariai sinchronizuotųsi tarpusavyje ir prieitų bendrą sutarimą įvertinant, kurios transakcijos yra tinkamos, kad jas būtų galima pridėti į transakcijų žurnalą~\cite{cachin2017blockchain}. 
 
 
 
@@ -46,19 +46,20 @@ Tradicinės transakcijų žurnalų sistemos iš esmės yra išsprendusios greič
 %                     2.1.2. DUOMENŲ NEKINTAMUMAS
 % --------------------------------------------------------------- %
 
-\subsubsection{Duomenų nekintamumas}
+\subsubsection{Duomenų nekintamumas} \label{subsection:dlt-immutability}
 
-Tiekimo grandinėse ypatingai svarbu, kad įrašai nebūtų padirbinėjami arba sunaikinami be žinios ar įsikišimo. Šiuo metu vyraujant centralizuotoms duomenų bazėms, administratoriai gali manipuliuoti duomenimis, o fizinės duomenų saugyklos įvykus nenumatytiems incidentams gali būti pažeistos nepataisomai.
+Tiekimo grandinėse ypatingai svarbu, kad įrašai nebūtų padirbinėjami arba sunaikinami be žinios ar nepageidaujamo įsikišimo. Šiuo metu vyraujant centralizuotoms duomenų bazėms, administratoriai gali manipuliuoti duomenimis, o fizinės duomenų saugyklos, įvykus nenumatytiems incidentams, gali būti pažeistos nepataisomai.
 
-DLT siūlo decentralizuoto transakcijų žurnalo architektūrą (žr. 5 pav.), kurio veikimui nereikia jokios centralizuotos duomenų saugyklos ar administravimo \cite{yu2018virtualization}. Transakcijų žurnalas tampa paskirstytas visame tinkle ir, naudojant konsensuso algoritmą, visi autorizuoti pakeitimai bet kurio vartotojo transakcijų žurnalo kopijoje atsispindi visų tinkle esančių vartotojų kopijose \cite{puthal2018blockchain}. Taip yra todėl, kad tinklo nariai, norėdami skaityti arba rašyti informaciją, kreipiasi ne į centrinę duomenų saugyklą, o į tinklą, t.y. tinkle dalyvaujančius narius ir jų duomenis.
+DLT siūlo decentralizuoto transakcijų žurnalo architektūrą (žr.~\ref{img:5} pav.), kurio veikimui nereikia jokios centralizuotos duomenų saugyklos ar administravimo~\cite{yu2018virtualization}. Transakcijų žurnalas tampa paskirstytas visame tinkle ir, naudojant konsensuso algoritmą, visi autorizuoti pakeitimai bet kurio vartotojo transakcijų žurnalo kopijoje atsispindi visų tinkle esančių vartotojų kopijose~\cite{puthal2018blockchain}. Taip yra todėl, kad tinklo nariai, norėdami skaityti arba rašyti informaciją, kreipiasi ne į centrinę duomenų saugyklą, o į tinklą, t.y. tinkle dalyvaujančius narius ir jų duomenis.
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.63]{images/ledger-model-types}
     \caption{Transakcijų žurnalo centralizuoto ir išskirstyto tipų modeliai}
+    \label{img:5}
 \end{figure}
 
-Iš to kyla viena svarbiausių DLT savybių: tai, kas įrašyta į išskirstytą transakcijų žurnalą, negali būti pakeista arba ištrinta – šitaip yra pasiekiamas duomenų nekintamumas (angl. \textit{Data Immutability}) \cite{xu2017dl}. Tokiu atveju visi duomenys tampa apsaugoti nuo potencialaus duomenų padirbinėjimo. O tai leidžia matyti visą unikalią istorinę informaciją. Pavyzdžiui, transportuojant prekes iš taško A į tašką B ir fiksuojant krovinio vietą laike, galime matyti visą jo kelionės istorinę informaciją ir pasitikėti išskirstytu transakcijų žurnalu, jog tie duomenys yra autentiški. 
+Iš to kyla viena svarbiausių DLT savybių: tai, kas įrašyta į išskirstytą transakcijų žurnalą, negali būti pakeista arba ištrinta – šitaip yra pasiekiamas duomenų nekintamumas (angl. \textit{Data Immutability})~\cite{xu2017dl}. Tokiu atveju visi duomenys tampa apsaugoti nuo potencialaus duomenų padirbinėjimo. O tai leidžia matyti visą unikalią istorinę informaciją. Pavyzdžiui, transportuojant prekes iš taško A į tašką B ir fiksuojant krovinio vietą laike, galime matyti visą jo kelionės istorinę informaciją ir pasitikėti išskirstytu transakcijų žurnalu, jog tie duomenys yra autentiški. 
 
 Tą užtikrina jau minėtas konsensuso algoritmas, apsaugantis duomenis nuo piktavalių naudotojų. Tačiau ši savybė tam tikrais atvejais gali būti tuo pačiu ir trūkumas. Pavyzdžiui, kai naudojame informaciją, galinčią dažnai kisti. Pasikeitus kliento mobilaus telefono numeriui, atnaujinti esamo duomenų įrašo negalėtume ir tektų kurti naują įrašą apie atsinaujinusius kliento duomenis.
 
@@ -68,13 +69,13 @@ Tą užtikrina jau minėtas konsensuso algoritmas, apsaugantis duomenis nuo pikt
 %                       2.1.3. DUOMENŲ SAUGUMAS
 % --------------------------------------------------------------- %
 
-\subsubsection{Duomenų saugumas}
+\subsubsection{Duomenų saugumas} \label{subsection:dlt-security}
 
-Svarbu, kad privatūs ir jautrūs duomenys, kuriais disponuoja įmonės, būtų apsaugoti, o prieigą prie jų turėtų tik tie, kam duomenys priklauso arba turi leidimą juos valdyti. Tai tapo dar svarbesniu veiksniu 2018 metais įsigaliojus GDPR reglamentui \cite{ferrari2018eu}. Jeigu įmonės paviešintų tokią informaciją, ji patirtų milžiniškus piniginius nuostolius dėl baudų, o nutekinta įmonei svarbia informacija pasinaudotų jos konkurentai.
+Svarbu, kad privatūs ir jautrūs duomenys, kuriais disponuoja įmonės, būtų apsaugoti, o prieigą prie jų turėtų tik tie, kam duomenys priklauso arba turi leidimą juos valdyti. Tai tapo dar svarbesniu veiksniu 2018 metais įsigaliojus GDPR reglamentui~\cite{ferrari2018eu}. Jeigu įmonės paviešintų jautrią informaciją, ji patirtų milžiniškus piniginius nuostolius dėl baudų, o nutekinta įmonei svarbia informacija pasinaudotų jos konkurentai.
 
-Didelė dalis populiariausių DLT yra viešos, nereikalaujančios prieigos teisių (angl. \textit{Permissionless Ledger}), t.y. visi vartotojai turi prieigą prie transakcijų žurnalo \cite{olnes2017blockchain}. Šitaip viešai matoma kas ir kokią informaciją įrašo į paskirstytą žurnalą, o tuo pačiu bet kas gali kurti naujus įrašus. Tačiau galimos ir papildomos DLT konfigūracijos. Pavyzdžiui, galima sukurti tokią privačią išskirstytą transakcijų žurnalą (angl. \textit{Permissioned Ledger}), kurioje duomenis skaityti bei rašyti galėtų tik prieigos teisę turinčios šalys \cite{backlund2016technical}. Tai yra naudinga, jeigu dvi ar daugiau įmonių yra verslo partnerės ir nori dalintis bendra informacija ar atlikti transakcijas tarpusavyje, tačiau jos nenorėtų, kad bet kas kitas už šio rato ribų apie tai žinotų. 
+Didelė dalis populiariausių DLT yra viešos, nereikalaujančios prieigos teisių (angl. \textit{Permissionless Ledger}), t.y. visi vartotojai turi prieigą prie transakcijų žurnalo~\cite{olnes2017blockchain}. Šitaip viešai matoma kas ir kokią informaciją įrašo į paskirstytą žurnalą, o tuo pačiu bet kas gali kurti naujus įrašus. Tačiau galimos ir papildomos DLT konfigūracijos. Pavyzdžiui, galima sukurti tokį privatų išskirstytą transakcijų žurnalą (angl. \textit{Permissioned Ledger}), kuriame duomenis skaityti bei rašyti galėtų tik prieigos teisę turinčios šalys~\cite{backlund2016technical}. Tai yra naudinga, jeigu dvi ar daugiau įmonių yra verslo partnerės ir nori dalintis bendra informacija ar atlikti transakcijas tarpusavyje, tačiau jos nenorėtų, kad bet kas kitas už šio rato ribų apie tai žinotų. 
 
-Vis dėlto, duomenis apsaugoti galima ir kitais būdais. Pavyzdžiui, naudojant kriptografijos metodus, tokius kaip privatų ir viešą raktą \cite{zyskind2015decentralizing}, galime užšifruoti duomenis ir į išskirstytą transakcijų žurnalą įrašyti tik tam tikrą maišos reikšmę (angl. \textit{Hash value}). Tiesa, visi tinklo nariai matys kas šiuos duomenis patalpino, tačiau niekas negalės žinoti duomenų turinio, išskyrus šalis, turinčias privatų raktą. Tai leidžia talpinti jautrią informaciją į viešą DLT ir jaustis saugiai, nes peržiūrėti jos originalų formatą be leidimo, t.y. privataus rakto, negali niekas.
+Vis dėlto, duomenis apsaugoti galima ir kitais būdais. Pavyzdžiui, naudojant kriptografijos metodus, tokius kaip privatų ir viešą raktą~\cite{zyskind2015decentralizing}, galime užšifruoti duomenis ir į išskirstytą transakcijų žurnalą įrašyti tik tam tikrą maišos reikšmę (angl. \textit{Hash value}). Tiesa, visi tinklo nariai matys kas šiuos duomenis patalpino, tačiau niekas negalės žinoti duomenų turinio, išskyrus šalis, turinčias privatų raktą. Tai leidžia talpinti jautrią informaciją į viešą DLT ir jaustis saugiai, nes peržiūrėti jos originalų formatą be leidimo, t.y. privataus rakto, negali niekas.
 
 
 
@@ -82,7 +83,7 @@ Vis dėlto, duomenis apsaugoti galima ir kitais būdais. Pavyzdžiui, naudojant 
 %           2.2. IŠSKIRSTYTO TRANSAKCIJŲ ŽURNALO ATMAINOS
 % --------------------------------------------------------------- %
 
-\subsection{Išskirstyto transakcijų žurnalo atmainos}
+\subsection{Išskirstyto transakcijų žurnalo atmainos} \label{subsection:dlt-types}
 
 Yra du pagrindiniai DLT tipai. Tai blokų grandinės (angl. \textit{Blockchain}) ir orientuoto grafo be ciklų (angl. \textit{Directed Acyclic Graph}), toliau – DAG struktūrą turintys DLT, kurie bus analizuojami tolimesniuose poskyriuose.
 
@@ -92,14 +93,15 @@ Yra du pagrindiniai DLT tipai. Tai blokų grandinės (angl. \textit{Blockchain})
 %                       2.2.1. BLOKŲ GRANDINĖ
 % --------------------------------------------------------------- %
 
-\subsubsection{Blokų grandinė}
+\subsubsection{Blokų grandinė} \label{subsection:blockchain}
 
-Šiuo metu yra daug blokų grandinių projektų, tačiau populiariausiomis ir stabiliausiomis išlieka dvi – Bitcoin ir Ethereum\footnote{Duomenys paimti iš: https://coinmarketcap.com. Tikrinta 2019-05-14.}. Šios blokų grandinės veikia tokiu principu: blokų duomenų struktūros, kuriuose saugoma informacija, t.y. transakcijos bei kitos blokų grandinei operuoti reikalingos reikšmės, yra sujungtos tarpusavyje nuosekliai į vieną ilgą ir nenutrūkstamą seką (žr. 6 pav.)\footnote{Paveikslėlyje pavaizduota architektūra yra prototipinė autoriaus sukurta blokų grandinė. Realybėje egzistuojančių blokų grandinių architektūros yra kur kas sudėtingesnės.}. Vienintelis būdas sukurti naujus įrašus – surinkti juos į naują bloką ir prijungti jį prie paskutinio grandinėje esančio bloko.
+Šiuo metu yra daug blokų grandinių projektų, tačiau populiariausiomis ir stabiliausiomis išlieka dvi – Bitcoin ir Ethereum\footnote{Duomenys paimti iš: \href{https://coinmarketcap.com}{https://coinmarketcap.com} [žiūrėta 2019-05-14].}. Šios blokų grandinės veikia tokiu principu: blokų duomenų struktūros, kuriose saugoma informacija, t.y. transakcijos bei kitos blokų grandinės veikimui reikalingos reikšmės, yra sujungtos tarpusavyje nuosekliai į vieną ilgą ir nenutrūkstamą seką (žr.~\ref{img:6} pav.)\footnote{Paveikslėlyje pavaizduota architektūra yra prototipinė autoriaus sukurta blokų grandinė. Realybėje egzistuojančių blokų grandinių architektūros yra kur kas sudėtingesnės.}. Vienintelis būdas sukurti naujus įrašus – surinkti juos į naują bloką ir prijungti jį prie paskutinio grandinėje esančio bloko.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.85]{images/block-chain-architecture}
+    \includegraphics[scale=0.80]{images/block-chain-architecture}
     \caption{Blokų grandinės architektūrinis modelis}
+    \label{img:6}
 \end{figure}
 
 
@@ -108,20 +110,21 @@ Yra du pagrindiniai DLT tipai. Tai blokų grandinės (angl. \textit{Blockchain})
 %          2.2.1.1. BLOKŲ GRANDINĖS DUOMENŲ NEKINTAMUMAS
 % --------------------------------------------------------------- %
 
-\subsubsubsection{Blokų grandinės duomenų nekintamumas}
+\subsubsubsection{Blokų grandinės duomenų nekintamumas} \label{subsection:blockchain-immutability}
 
-Jeigu bandytume pridėti bloką grandinės viduryje, ši išsišakotų į 2 atskiras šakas. Čia svarbią reikšmę turi konsensuso algoritmas. Konsensuso algoritmas turi apsaugoti blokų grandinę nuo grandinės išsišakojimų, blokų ištrynimo, keitimo, dvigubo išleidimo problemos (angl. \textit{Double-spending problem}) bei kitokių taisyklių pažeidimų ar spragų, kuriomis norėtų pasinaudoti kenkėjai tinkle \cite{baliga2017understanding}. Kitaip – garantuoti duomenų nekintamumą ir vienareikšmiškumą.
+Jeigu bandytume pridėti bloką grandinės viduryje, ši išsišakotų į 2 atskiras šakas. Čia svarbią reikšmę turi konsensuso algoritmas. Konsensuso algoritmas turi apsaugoti blokų grandinę nuo grandinės išsišakojimų, blokų ištrynimo, keitimo, dvigubo išleidimo problemos (angl. \textit{Double-spending problem}) bei kitokių taisyklių pažeidimų ar spragų, kuriomis norėtų pasinaudoti kenkėjai tinkle~\cite{baliga2017understanding}. Kitaip – garantuoti duomenų nekintamumą ir vienareikšmiškumą.
 
-Vienas iš tokių konsensuso algoritmo atmainų, kurį naudoja Bitcoin ir Ethereum, yra atlikto darbo (angl. \textit{Proof of Work}) konsensuso algoritmas, toliau – PoW \cite{gervais2016security}. Kaskart norint pridėti bloką, reikia atlikti darbą, kuris reikalauja kompiuterinių skaičiavimų galios, laiko ir energijos išteklių. Blokų grandinėje kuriant naujus blokus kartais atsiranda išsišakojimai. Tai įvyksta tada, jeigu du ar daugiau blokų iškasami beveik tuo pačiu metu \cite{zheng2017overview}. Atsiradus tokiems išsišakojimams, tinklas pasirenka ilgiausią atšaką, t.y. tokią, kuri turi daugiausiai blokų \cite{zheng2017overview}. 
+Vienas iš tokių konsensuso algoritmo atmainų, kurį naudoja Bitcoin ir Ethereum, yra atlikto darbo (angl. \textit{Proof of Work}) konsensuso algoritmas, toliau – PoW~\cite{gervais2016security}. Kaskart norint pridėti bloką, reikia atlikti darbą, kuris reikalauja kompiuterinių skaičiavimų galios, laiko ir energijos išteklių. Blokų grandinėje kuriant naujus blokus tam tikrais atvejais atsiranda išsišakojimų. Tai įvyksta tada, jeigu du ar daugiau blokų iškasami beveik tuo pačiu metu~\cite{zheng2017overview}. Atsiradus tokiems išsišakojimams, tinklas pasirenka ilgiausią atšaką, t.y. tokią, kuri turi daugiausiai blokų~\cite{zheng2017overview}. 
 
-Tačiau išsišakojimus galima kurti ir savanaudiškais tikslais. Tinklo kenkėjas, norintis pakeisti transakciją viename iš blokų, sukurs grandinės išsišakojimą, turintį savyje pakeistos transakcijos versiją. Tačiau tam, kad tinklas pripažintų pakeistą transakciją grandinėje, t.y. naują grandinės išsišakojimą, kenkėjas turės atlikti darbą, kurį padarė visas tinklas nuo išsišakojimo pradžios iki einamojo momento \cite{nakamoto2008bitcoin}. Be to, atlikti PoW darbą reikės gerokai sparčiau nei visi kiti tinklo nariai kartu sudėjus, kad kenkėjas ne tik pasivytų visą tinklą grandinės ilgiu, bet ir jį aplenktų. Visa tai tam, kad kenkėjo sukurtas grandinės išsišakojimas taptų ilgesnis už pagrindinę grandį\footnote{Šis scenarijus dar yra vadinamas 51 procento ataka (angl. \textit{51\% Attack)} \cite{baliga2017understanding}.} \cite{nakamoto2008bitcoin}. Tik tokiu atveju piktybinę grandį tinklas priimtų kaip teisingą (žr. 7 pav.).
+Tačiau išsišakojimus galima kurti ir savanaudiškais tikslais. Tinklo kenkėjas, norintis pakeisti transakciją viename iš blokų, sukurs grandinės išsišakojimą, turintį savyje pakeistos transakcijos versiją. Tačiau tam, kad tinklas pripažintų pakeistą transakciją grandinėje, t.y. naują grandinės išsišakojimą, kenkėjas turės atlikti darbą, kurį padarė visas tinklas nuo išsišakojimo pradžios iki einamojo momento~\cite{nakamoto2008bitcoin}. Be to, atlikti PoW darbą reikės gerokai sparčiau nei visi kiti tinklo nariai kartu sudėjus, kad kenkėjas ne tik pasivytų visą tinklą grandinės ilgiu, bet ir jį aplenktų. Visa tai tam, kad kenkėjo sukurtas grandinės išsišakojimas taptų ilgesnis už pagrindinę grandį\footnote{Šis scenarijus dar yra vadinamas 51 procento ataka (angl. \textit{51\% Attack)}~\cite{baliga2017understanding}.}~\cite{nakamoto2008bitcoin}. Tik tokiu atveju piktybinę grandį tinklas priimtų kaip teisingą (žr.~\ref{img:7} pav.).
 
-Šiuo metu tiek Bitcoin, tiek Ethereum toks scenarijus yra labai mažai tikėtinas, nes naujus blokus sukuria didelis kiekis kasėjų (angl. \textit{Miners}), kuriems PoW suteikia stimulą (angl. \textit{Incentive}) kasti, t.y. kurti naujus blokus. Tą lemia PoW skatinimo sistema: už kiekvieną iškastą bloką yra skiriamas apdovanojimas – kriptovaliuta (angl. \textit{Cryptocurrency}) \cite{nakamoto2008bitcoin}. Taigi, tinklo kenkėjui beveik nėra šansų pakreipti konsensuso algoritmo savo naudai – to daryti tiesiog neapsimoka ir beveik neįmanoma techniškai. Šitaip užtikrinamas vienas iš reikalavimų – duomenų nekintamumas ir vienareikšmiškumas.
+Šiuo metu tiek Bitcoin, tiek Ethereum toks scenarijus yra mažai tikėtinas, nes naujus blokus sukuria didelis kiekis kasėjų (angl. \textit{Miners}), kuriems PoW suteikia stimulą (angl. \textit{Incentive}) kasti, t.y. kurti naujus blokus. Tą lemia PoW skatinimo sistema: už kiekvieną iškastą bloką yra skiriamas apdovanojimas – kriptovaliuta (angl. \textit{Cryptocurrency})~\cite{nakamoto2008bitcoin}. Taigi, tinklo kenkėjui beveik nėra šansų pakreipti konsensuso algoritmo savo naudai – to daryti tiesiog neapsimoka ir beveik neįmanoma techniškai. Šitaip užtikrinamas vienas iš reikalavimų – duomenų nekintamumas ir vienareikšmiškumas.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.5]{images/blockchain-branches}
-    \caption{Blokų grandinės šakos \cite{zheng2017overview}}
+    \includegraphics[scale=0.45]{images/blockchain-branches}
+    \caption{Blokų grandinės šakos~\cite{zheng2017overview}}
+    \label{img:7}
 \end{figure}
 
 
@@ -130,11 +133,11 @@ Tačiau išsišakojimus galima kurti ir savanaudiškais tikslais. Tinklo kenkėj
 %               2.2.1.2. BLOKŲ GRANDINĖS PRALAIDUMAS
 % --------------------------------------------------------------- %
 
-\subsubsubsection{Blokų grandinės pralaidumas}
+\subsubsubsection{Blokų grandinės pralaidumas} \label{subsection:blockchain-throughput}
 
-Blokų grandinės pralaidumas (angl. \textit{Throughput}) priklauso nuo daugelio faktorių. Visi šie faktoriai yra susiję su transakcijų gyvavimo ciklu. Bitcoin atveju transakcijų gyvavimo ciklas veikia tokiu principu \cite{nakamoto2008bitcoin}:
+Blokų grandinės pralaidumas (angl. \textit{Throughput}) priklauso nuo daugelio faktorių. Visi šie faktoriai yra susiję su transakcijų gyvavimo ciklu. Bitcoin atveju transakcijų gyvavimo ciklas veikia tokiu principu~\cite{nakamoto2008bitcoin}:
 \begin{enumerate}
-    \item Visų pirma, kiekvienas narys, sukurdamas transakciją, ją viešai paskelbia kitiems tinklo nariams. 
+    \item Visų pirma, kiekvienas narys, sukurdamas transakciją, ją viešai paskelbia kitiems tinklo nariams tam, kad transakcija būtų įtraukta į bloką. 
     \item Bloko kasėjas surenka dalį arba visas viešai paskelbtas transakcijas į bloką ir atlieka darbą pagal PoW konsensuso algoritmą.
     \item Apskaičiavęs darbo rezultatą kasėjas paskelbia naujai sukurtą bloką visiems tinklo nariams viešai. 
     \item Jeigu kiti tinklo nariai pasitiki bloke esančių transakcijų tinkamumu, blokas galiausiai prijungiamas prie visos grandinės pabaigos ir tinklas nuosekliai jungia naujus blokus prie šio bloko. 
@@ -146,26 +149,26 @@ Taip pat yra tikimybė, kad transakcija nebus patvirtinta, jeigu blokų kasėjai
 
 Taigi matome, kad transakcijų greitis priklauso nuo šių pagrindinių priežasčių: 
 \begin{itemize}
-    \item Kiek laiko trunka bloko sukūrimas, kitaip – per kiek laiko atliekamas PoW skaičiavimas.
+    \item Mokesčio dydžio, kuris lemia, ar kasėjai bus linkę įtraukti transakciją į blokus ir kaip greitai ji bus įtraukta.
     \item Kiek blokas gali talpinti savyje transakcijų, arba kitaip bloko dydis baitais.
+    \item Kiek laiko trunka bloko sukūrimas, kitaip – per kiek laiko atliekamas PoW skaičiavimas.
     \item Kiek reikalinga tolimesnių blokų, kad blokas būtų laikomas saugiai patvirtintu.
-    \item Mokesčio dydžio, kuris lemia, ar kasėjai įtrauks transakciją į bloką su 100\% tikimybe ir kaip greitai ji bus įtraukta.
 \end{itemize} 
 
-Žemiau pateikiama lentelė (žr. 1 lentelę) su Bitcoin ir Ethereum platformų rodiklių palyginimais\footnote{Autorius nepateikia vidutinės transakcijos mokesčio kainos, nes kriptovaliutų kaina ir transakcijos mokestis rinkoje yra labai nepastovūs. Ethereum: https://ethgasstation.info. Bitcoin: https://bitcoinfees.info. Tikrinta: 2019-05-17.}. Iš joje esančių duomenų seka maksimalus TPS greitis.
+Žemiau pateikiama lentelė (žr.~\ref{tab:1} lentelę) su Bitcoin ir Ethereum platformų rodiklių palyginimais\footnote{Autorius nepateikia vidutinės transakcijos mokesčio kainos, nes kriptovaliutų kaina ir transakcijos mokestis rinkoje yra labai nepastovūs. Ethereum: \href{https://ethgasstation.info}{https://ethgasstation.info}, Bitcoin: \href{https://bitcoinfees.info}{https://bitcoinfees.info} [žiūrėta 2019-05-17].}. Iš joje esančių duomenų seka maksimalus TPS greitis.
 
 \begin{longtable}{|L{4cm}|L{5,3cm}|L{5,5cm}|}
 \caption{Bitcoin ir Ethereum rodiklių palyginimas}
-\label{variability_impl_mech}
+\label{tab:1}
 \endfirsthead
 \endhead
 \hline
 \textbf{Palyginimo kriterijus} & \multicolumn{1}{c|}{\textbf{Bitcoin}} & \multicolumn{1}{c|}{\textbf{Ethereum}} \\ \hline
-\textbf{Transakcijų kiekio bloke limitas} & Apie 4000 transakcijų \cite{zhu2016interactive} & 380 unikalių transakcijų limitas\footnote{Bloko GAS limitas – 8 mln. \cite{hu2018hierarchical}, o vienos transakcijos minimalus GAS limitas – 21 tūkst. \cite{xu2017taxonomy}. Todėl 8000000 / 21000 = 380.} \\ \hline
-\textbf{Bloko iškasimo laikas} & 10 min. \cite{macdonald2017blockchain} & 10-20 sekundžių \cite{gervais2016security} \\ \hline
-\textbf{Patvirtinimo blokų kiekis} & 6 \cite{xu2017taxonomy} & 12 \cite{xu2017taxonomy} \\ \hline
-\textbf{Saugaus patvirtinimo laikas} & 1 valanda \cite{xu2017taxonomy} & 3 minutės \cite{xu2017taxonomy}  \\ \hline
-\textbf{TPS limitas} & 7 TPS \cite{macdonald2017blockchain} & 25 TPS \cite{bocek2018smart} \\ \hline
+\textbf{Transakcijų kiekis bloke} & Apie 4000~\cite{zhu2016interactive} & 380 limitas\footnote{Bloko GAS limitas – 8 mln.~\cite{hu2018hierarchical}, o vienos transakcijos minimalus GAS limitas – 21 tūkst.~\cite{xu2017taxonomy}. Todėl 8000000 / 21000 = 380.} \\ \hline
+\textbf{Bloko iškasimo laikas} & 10 min.~\cite{macdonald2017blockchain} & 10-20 sekundžių~\cite{gervais2016security} \\ \hline
+\textbf{Patvirtinimo blokų skaičius} & 6~\cite{xu2017taxonomy} & 12~\cite{xu2017taxonomy} \\ \hline
+\textbf{Saugaus patvirtinimo laikas} & 1 valanda~\cite{xu2017taxonomy} & 3 minutės~\cite{xu2017taxonomy}  \\ \hline
+\textbf{TPS limitas} & 7 TPS~\cite{macdonald2017blockchain} & 25 TPS~\cite{bocek2018smart} \\ \hline
 \end{longtable}
 
 
@@ -174,7 +177,7 @@ Taigi matome, kad transakcijų greitis priklauso nuo šių pagrindinių priežas
 %                 2.2.1.3. BLOKŲ GRANDINIŲ TRŪKUMAI
 % --------------------------------------------------------------- %
 
-\subsubsubsection{Blokų grandinių trūkumai}
+\subsubsubsection{Blokų grandinių trūkumai} \label{subsection:blockchain-drawbacks}
 
 1 lentelėje pateikti duomenys atskleidžia blokų grandinių trūkumus. Žinant tiekimo grandinių ir logistikos mastus, šiuo metu šios platformos turėtų rimtų sunkumų siekiant patenkinti rinkos poreikius dėl esamų technologinių suvaržymų: 
 \begin{itemize}
@@ -183,9 +186,9 @@ Taigi matome, kad transakcijų greitis priklauso nuo šių pagrindinių priežas
     \item Mokesčiai už atliekamas transakcijas tikriausiai yra vienas iš labiausiai atgrasančių suvaržymų. Tikėtina, kad tam tikrais atvejais mokesčiai už transakcijas gali būti aukštesni už transportuojamų prekių kainą.
 \end{itemize} 
 
-Tam tikros blokų grandinės yra įgyvendinusios išmaniųjų kontraktų (angl. \textit{Smart contracts}) funkcionalumą, kuris praturtina technologijos potencialą ir savaime yra privalumas. Išmanusis kontraktas – programinis kodas, kuris automatiškai vykdo komandas pagal prieš tai aprašytas taisykles \cite{buterin2013ethereum}.
+Tam tikros blokų grandinės yra įgyvendinusios išmaniųjų kontraktų (angl. \textit{Smart contracts}) funkcionalumą, kuris praturtina technologijos potencialą. Išmanusis kontraktas – programinis kodas, kuris vykdo komandas pagal prieš tai aprašytas taisykles~\cite{buterin2013ethereum}.
 
-Ethereum išmanieji kontraktai įgalina automatizuotus kriptovaliutų pervedimus pagal programinį kodą, remiantis sugalvotais scenarijais. Tačiau jų realizavimas praktikoje kol kas atrodo neefektyvus. Visi tinklo nariai, norintys patikrinti bloko validumą, turintį savyje transakciją, kuri inicijuoja išmaniojo kontrakto vykdymą, turi vykdyti tą patį išmaniojo kontrakto kodą \cite{buterin2013ethereum}. Dėl šios priežasties vienos decentralizuotos programėlės (angl. \textit{Decentralized Application}), toliau - DApp, išpopuliarėjimas apkrovė ir smarkiai sulėtino Ethereum tinklą\footnote{https://cryptovest.com/news/ethereum-loses-to-cryptokitties-network-remains-slow. Tikrinta 2019-05-14.}.\pagebreak
+Ethereum išmanieji kontraktai įgalina automatizuotus kriptovaliutų pervedimus pagal programinį kodą, remiantis užprogramuotais scenarijais. Tačiau jų realizavimas praktikoje kol kas atrodo neefektyvus. Visi tinklo nariai, norintys patikrinti bloko validumą, turintį savyje transakciją, kuri inicijuoja išmaniojo kontrakto vykdymą, turi vykdyti tą patį išmaniojo kontrakto kodą~\cite{buterin2013ethereum}. Dėl šios priežasties vienos decentralizuotos programėlės (angl. \textit{Decentralized Application}), toliau - DApp, išpopuliarėjimas apkrovė ir smarkiai sulėtino Ethereum tinklą\footnote{Informacija paimta iš: \href{https://cryptovest.com/news/ethereum-loses-to-cryptokitties-network-remains-slow}{https://cryptovest.com/news/ethereum-loses-to-cryptokitties-network-remains-slow} [žiūrėta 2019-05-17].}.\pagebreak
 
 
 
@@ -193,9 +196,9 @@ Ethereum išmanieji kontraktai įgalina automatizuotus kriptovaliutų pervedimus
 %               2.2.2. ORIENTUOTAS GRAFAS BE CIKLŲ
 % --------------------------------------------------------------- %
 
-\subsubsection{Orientuotas grafas be ciklų}
+\subsubsection{Orientuotas grafas be ciklų} \label{subsection:dag}
 
-Šiuo metu egzistuoja gerokai mažiau DAG principu paremtų projektų, palyginus su blokų grandinės projektais. Tačiau vienas iš įdomiausių ir daugiausiai žadančių – IOTA platforma. 
+Šiuo metu egzistuoja gerokai mažiau DAG principu paremtų projektų, negu jų yra blokų grandinių aplinkoje. Tačiau vienas iš įdomiausių ir daugiausiai žadančių – IOTA platforma. 
 
 
 
@@ -203,28 +206,29 @@ Ethereum išmanieji kontraktai įgalina automatizuotus kriptovaliutų pervedimus
 %                   2.2.2.1. IOTA VEIKIMO POBŪDIS
 % --------------------------------------------------------------- %
 
-\subsubsubsection{IOTA veikimo pobūdis}
+\subsubsubsection{IOTA veikimo pobūdis} \label{subsection:dag-principals}
 
-Vietoje blokų grandinės ir joje kasamų blokų su transakcijomis, IOTA įgyvendino DAG struktūrą turinčią išskirstytą transakcijų žurnalą, vadinamą raizginiu (angl. \textit{Tangle}) (žr. 8 pav.). Modelyje vaidmenį atlieka 3 elementai:
+Vietoje blokų grandinės ir joje kasamų blokų su transakcijomis, IOTA įgyvendino DAG struktūrą turinčią išskirstytą transakcijų žurnalą, vadinamą raizginiu (angl. \textit{Tangle}) (žr.~\ref{img:8} pav.). Modelyje vaidmenį atlieka 3 elementai:
 \begin{itemize}
-    \item Patvirtinta transakcija. Tai tokia transakcija, kurią patvirtina bent 1 kita transakcija.
+    \item Patvirtinta transakcija. Tai tokia transakcija, kurią patvirtina bent viena kita transakcija.
     \item Nepatvirtinta transakcija. Jos dar vadinamos raizginio viršūnėmis (angl. \textit{Tips}). Šios transakcijos jokia kita transakcija dar nepatvirtino.
-    \item Transakcijos patvirtinimas. Kiekvienas IOTA tinklo narys, norėdamas atlikti transakciją, privalo patvirtinti kitas 2 transakcijas \cite{popov2016tangle}.
+    \item Transakcijos patvirtinimas. Kiekvienas IOTA tinklo narys, norėdamas atlikti transakciją, privalo patvirtinti kitas dvi transakcijas~\cite{popov2016tangle}.
 \end{itemize} 
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.56]{images/iota-tangle}
-    \caption{IOTA raizginio modelis \cite{popov2016tangle}}
+    \caption{IOTA raizginio modelis~\cite{popov2016tangle}}
+    \label{img:8}
 \end{figure}
 
-Transakcijų patvirtinimo įgyvendinimas yra unikalus ir specifinis procesas, kuriame didelę reikšmę turi matematiniai skaičiavimai. Visų pirma, norint atlikti transakciją IOTA tinkle, yra privaloma atlikti nuoseklius žingsnius: pasirinkti 2 transakcijas, patikrinti jų validumą ir atlikti darbą PoW principu \cite{popov2016tangle}. 
+Transakcijų patvirtinimo įgyvendinimas yra unikalus ir specifinis procesas, kuriame didelę reikšmę turi matematiniai skaičiavimai. Visų pirma, norint atlikti transakciją IOTA tinkle, yra privaloma atlikti nuoseklius žingsnius: pasirinkti 2 transakcijas, patikrinti jų validumą ir atlikti darbą PoW principu~\cite{popov2016tangle}. 
 
-Unikalu yra tai, kad kiekvienas narys, norintis atlikti transakciją, PoW atlieka pats \cite{bramas2018stability}. Priešingai negu Bitcoin ar Ethereum, kur PoW galima deleguoti kitiems tinklo nariams, už tai sumokant transakcijos mokestį. Tačiau IOTA naudojamas PoW yra gerokai paprastesnis ir nereikalaujantis daug skaičiavimo galios \cite{popov2016tangle}. Visų pirma, PoW reikalingas tam, kad būtų apsisaugoma nuo fiktyvių transakcijų (angl. \textit{Spam}) \cite{popov2016tangle}. Skaičiavimų sudėtingumas žemas dėl to, kad IOTA pritaikyta daiktų internetui, kuriame dalyvauja labai smulkūs prietaisai, neturintys pajėgumų sudėtingiems skaičiavimams atlikti.
+Unikalu yra tai, kad kiekvienas narys, norintis atlikti transakciją, PoW atlieka pats~\cite{bramas2018stability}. Priešingai negu Bitcoin ar Ethereum, kur PoW galima deleguoti kitiems tinklo nariams, už tai sumokant transakcijos mokestį. Tačiau IOTA naudojamas PoW yra gerokai paprastesnis ir nereikalaujantis daug skaičiavimo galios~\cite{popov2016tangle}. Visų pirma, PoW reikalingas tam, kad būtų apsisaugoma nuo fiktyvių transakcijų (angl. \textit{Spam})~\cite{popov2016tangle}. Skaičiavimų sudėtingumas žemas dėl to, kad IOTA pritaikyta daiktų internetui, kuriame dalyvauja labai smulkūs prietaisai, neturintys pajėgumų sudėtingiems skaičiavimams atlikti.
 
-Tuo tarpu transakcijų parinkimo klausimas nėra toks trivialus ir nuo to priklauso visos ekosistemos stabilumas. IOTA ir neturi jokių formalių taisyklių transakcijų parinkimo patvirtinimui, t.y. galima laisva nuožiūra pasirinkti pačiam, kokias transakcijas patvirtinti \cite{popov2016tangle}. Tačiau egzistuoja rekomendacinis algoritmas \cite{popov2016tangle}. Šį algoritmą renkasi dauguma tinklo narių, nes sąžiningai jo laikantis padidėja tikimybė, kad likę nariai taip pat laikysis šio algoritmo. Iš to seka, kad algoritmo besilaikančių narių transakcijos bus patvirtintos kitų narių su aukštesne tikimybe.
+Tuo tarpu transakcijų parinkimo klausimas nėra toks trivialus ir nuo to priklauso visos ekosistemos stabilumas. IOTA ir neturi jokių formalių taisyklių transakcijų parinkimo patvirtinimui, t.y. galima laisva nuožiūra pasirinkti pačiam, kokias transakcijas patvirtinti~\cite{popov2016tangle}. Tačiau egzistuoja rekomendacinis algoritmas~\cite{popov2016tangle}. Šį algoritmą renkasi dauguma tinklo narių, nes sąžiningai jo laikantis padidėja tikimybė, kad likę nariai taip pat laikysis šio algoritmo. Iš to seka, kad algoritmo besilaikančių narių transakcijos bus patvirtintos kitų narių su aukštesne tikimybe.
 
-2 transakcijos parenkamos pagal viršūnių parinkimo algoritmą (angl. \textit{Tip Selection Algorithm}), toliau – TSA, o IOTA atveju konkrečiai – Markov Chain Monte Carlo (MCMC) algoritmu, kurio veikimui įtaką daro su kiekviena transakcija susieta informacija ir atributai \cite{bramas2018stability}. Tai transakcijos svoris (angl. \textit{Weight}), transakcijos taškai (angl. \textit{Score}) ir transakcijos kaupiamasis svoris (angl. \textit{Cumulative Weight}) \cite{popov2016tangle}. 
+2 transakcijos parenkamos pagal viršūnių parinkimo algoritmą (angl. \textit{Tip Selection Algorithm}), toliau – TSA, o IOTA atveju konkrečiai – Markov Chain Monte Carlo (MCMC) algoritmu, kurio veikimui įtaką daro su kiekviena transakcija susieta informacija ir atributai~\cite{bramas2018stability}. Tai transakcijos svoris (angl. \textit{Weight}), transakcijos taškai (angl. \textit{Score}) ir transakcijos kaupiamasis svoris (angl. \textit{Cumulative Weight})~\cite{popov2016tangle}. 
 
 
 
@@ -232,13 +236,13 @@ Tuo tarpu transakcijų parinkimo klausimas nėra toks trivialus ir nuo to prikla
 %                       2.2.2.2. IOTA SAUGUMAS
 % --------------------------------------------------------------- %
 
-\subsubsubsection{IOTA saugumas}
+\subsubsubsection{IOTA saugumas} \label{subsection:dag-security}
 
-IOTA technologija buvo pradėta kurti atsižvelgus į ateities perspektyvas ir kuriamas naujas technologijas. Viena iš tokių ateities perspektyvų – kvantiniai kompiuteriai (angl. \textit{Quantum Computers}), kurie gali padaryti daugumą blokų grandinių pažeidžiamomis. Šis pažeidžiamumas kyla iš to, kaip yra atliekami PoW skaičiavimai ir pasirašomos transakcijos \cite{kiktenko2018quantum}. Pakankamai galingas kvantinis kompiuteris galėtų įvykdyti 51 procento ataką ir pakreipti visą tinklą savo naudai \cite{kiktenko2018quantum}. 
+IOTA platforma buvo pradėta kurti atsižvelgus į ateities perspektyvas ir kuriamas naujas technologijas. Viena iš tokių ateities perspektyvų – kvantiniai kompiuteriai (angl. \textit{Quantum Computers}), kurie gali padaryti daugumą blokų grandinių pažeidžiamomis. Šis pažeidžiamumas kyla iš to, kaip yra atliekami PoW skaičiavimai ir kaip pasirašomos transakcijos~\cite{kiktenko2018quantum}. Pakankamai galingas kvantinis kompiuteris galėtų įvykdyti 51 procento ataką ir pakreipti visą tinklą savo naudai~\cite{kiktenko2018quantum}. 
 
-Tai reiškia, kad Bitcoin, o kartu ir PoW konsensuso algoritmu paremtos blokų grandinės taptų nesaugios. Tačiau net jeigu blokų grandinė ir nėra paremta PoW konsensuso algoritmu, ji gali tapti nesaugi kitomis prasmėmis. Tam tikrais atvejais yra būtina paviešinti viešą raktą ir kvantinis kompiuteris, pasinaudojęs šiuo raktu, galėtų nustatyti privataus rakto reikšmę \cite{aggarwal2017quantum}. Privatus raktas yra naudojamas pasirašant transakcijas, patvirtinant savo tapatybę bei laikant kriptovaliutas (angl. \textit{Cryptocurency}) kriptopiniginėse (angl. \textit{Crypto Wallets}). Tokia spraga reikštų, kad asmenys, disponuojantys kvantiniu kompiuteriu, galėtų perskaityti privačiu raktu užšifruotas žinutes, pasisavinti sąskaitoje laikomą turtą ar apsimesti kitu asmeniu.
+Tai reiškia, kad Bitcoin, o kartu ir PoW konsensuso algoritmu paremtos blokų grandinės taptų nesaugios. Tačiau net jeigu blokų grandinė ir nėra paremta PoW konsensuso algoritmu, ji gali tapti nesaugi kitomis prasmėmis. Tam tikrais atvejais yra būtina paviešinti viešą raktą ir kvantinis kompiuteris, pasinaudojęs šiuo raktu, galėtų nustatyti privataus rakto reikšmę~\cite{aggarwal2017quantum}. Privatus raktas yra naudojamas pasirašant transakcijas, patvirtinant savo tapatybę bei laikant kriptovaliutas (angl. \textit{Cryptocurency}) kriptopiniginėse (angl. \textit{Crypto Wallets}). Tokia spraga reikštų, kad asmenys, disponuojantys kvantiniu kompiuteriu, galėtų perskaityti privačiu raktu užšifruotas žinutes, pasisavinti sąskaitoje laikomą turtą ar apsimesti kitu asmeniu.
 
-IOTA savo ruožtu nepateikia visiško atsparumo kvantinių kompiuterių atakoms, tačiau teigia, kad jų sprendimas yra žymiai saugesnis, negu Bitcoin ar kitų panašių platformų. IOTA naudoja Winternitz vienkartinę parašo panaudojimo schemą, kuri, kaip manoma, yra atspari kvantiniams kompiuteriams \cite{el2018review}.
+IOTA savo ruožtu nepateikia visiško atsparumo kvantinių kompiuterių atakoms, tačiau teigia, kad jų sprendimas yra žymiai saugesnis, negu Bitcoin ar kitų panašių platformų. IOTA naudoja Winternitz vienkartinę parašo panaudojimo schemą, kuri, kaip manoma, yra atspari kvantiniams kompiuteriams~\cite{el2018review}.
 
 
 
@@ -246,7 +250,7 @@ IOTA savo ruožtu nepateikia visiško atsparumo kvantinių kompiuterių atakoms,
 %                     2.2.2.3. IOTA PRALAIDUMAS
 % --------------------------------------------------------------- %
 
-\subsubsubsection{IOTA pralaidumas}
+\subsubsubsection{IOTA pralaidumas} \label{subsection:dag-throughput}
 
 IOTA, priešingai negu blokų grandinės, neturi tokio architektūrinio vieneto kaip blokas, todėl pralaidumas ir greitis priklauso tik nuo individualių transakcijų patekimo į raizginį greičio. Žinant IOTA veikimo principą, galima išskirti rodiklius, darančius įtaką tinklo pralaidumui:
 \begin{itemize}
@@ -258,7 +262,7 @@ IOTA, priešingai negu blokų grandinės, neturi tokio architektūrinio vieneto 
 
 IOTA neturi konkrečių teorinių TPS limitų. Visi apribojimai kyla iš to, kaip greitai individualių transakcijų kūrėjai apskaičiuos kiekvienai transakcijai reikalingą atlikti PoW. Taip pat, kuo daugiau aktyvių narių tinkle, tuo aukštesnis bendras TPS dydis, nes daugiau narių kuria naujas transakcijas ir daugiau narių jas tvirtina. Taigi vieninteliai technologijos limitai – tai individualių mašinų tinkle kiekis bei jų skaičiavimo ir validavimo sparta.
 
-Kitas svarbus aspektas – transakcijų mokestis. IOTA netaiko jokio transakcijų mokesčio \cite{zivic2019distributed}. O tai tampa pranašumu tinklo naudotojams, kurio neturi dauguma blokų grandinių naudotojų. Be to, transakcijos neprivalo perduoti kriptovaliutų. Tai reiškia, kad galima atlikti tuščias transakcijas arba tiesiog dalintis informacija su kitais tinklo nariais. Ši savybė tampa naudinga daiktų internete įrenginiams atliekant mikrotransakcijas.
+Kitas svarbus aspektas – transakcijų mokestis. IOTA netaiko jokio transakcijų mokesčio~\cite{zivic2019distributed}. O tai tampa pranašumu tinklo naudotojams, kurio neturi dauguma blokų grandinių naudotojų. Be to, transakcijos neprivalo perduoti kriptovaliutų. Tai reiškia, kad galima atlikti tuščias transakcijas arba tiesiog dalintis informacija su kitais tinklo nariais. Ši savybė tampa naudinga daiktų internete įrenginiams atliekant mikrotransakcijas.
 
 
 
@@ -266,25 +270,26 @@ Kitas svarbus aspektas – transakcijų mokestis. IOTA netaiko jokio transakcij�
 %        2.2.2.4. PASLĖPTI NUSTATYTOS TAPATYBĖS PRANEŠIMAI
 % --------------------------------------------------------------- %
 
-\subsubsubsection{Maskuotieji nustatytos tapatybės pranešimai}
+\subsubsubsection{Maskuotieji nustatytos tapatybės pranešimai} \label{subsection:dag-mam}
 
 Tiekimo grandinėse nepaprastai svarbus duomenų atsekamumas. Daugumai grandinės narių svarbu matyti prekės judėjimą, t.y. kur ir kada prekė keliavo, kaip pasikeitė prekės laikinieji savininkai, kokia buvo prekės būsena skirtingais laiko momentais ir t.t. Be to, kai kurie duomenys yra jautrūs ir reikia suvaldyti, kuri informacija kurioms šalims turi būti prieinama, o kuri – ne. Šį darbą dažnai tenka atlikti ranka, patikrinant skirtingus informacijos šaltinius.
 
-IOTA šiai problemai spręsti yra sukūrusi maskuotus nustatytos tapatybės pranešimus (angl. \textit{Masked Authenticated Message}), toliau – MAM. Tai yra biblioteka, užšifruojanti, iššifruojanti ir nustatanti tapatybę duomenų, kuriuos yra norima publikuoti į IOTA raizginį \cite{andreas2017masked}. Publikuojant tokius užšifruotus duomenis, galima atskleisti specialų raktą prenumeratoriams (angl. \textit{Subscribers}), kurie turėtų teisę stebėti duomenis. Duomenų pranešėjas (angl. \textit{Publisher}) tam sukuria kanalą (angl. \textit{Channel}) \cite{ab2018iota}.
+IOTA šiai problemai spręsti yra sukūrusi maskuotus nustatytos tapatybės pranešimus (angl. \textit{Masked Authenticated Message}), toliau – MAM. Tai yra biblioteka, užšifruojanti, iššifruojanti ir nustatanti tapatybę duomenų, kuriuos yra norima publikuoti į IOTA raizginį~\cite{andreas2017masked}. Publikuojant tokius užšifruotus duomenis, galima atskleisti specialų raktą prenumeratoriams (angl. \textit{Subscribers}), kurie turėtų teisę stebėti duomenis. Duomenų pranešėjas (angl. \textit{Publisher}) tam sukuria kanalą (angl. \textit{Channel})~\cite{ab2018iota}.
 
-Kuriant kanalą atsiveria nemažai konfigūracijos pasirinkimų. Kanalą galima padaryti išsišakojusį, kiekvieną šaką padaryti prieinamą skirtingoms šalims ir kiekvienoje jų publikuoti skirtingą informaciją \cite{ab2018iota}. Taip pat galima nustatyti norimą kanalo privatumo režimą iš 3 galimų rūšių \cite{paul2017introducing}:
+Kuriant kanalą atsiveria nemažai konfigūracijos pasirinkimų. Kanalą galima padaryti išsišakojusį, kiekvieną šaką padaryti prieinamą skirtingoms šalims ir kiekvienoje jų publikuoti skirtingą informaciją~\cite{ab2018iota}. Taip pat galima nustatyti norimą kanalo privatumo režimą iš 3 galimų rūšių~\cite{paul2017introducing}:
 \begin{itemize}
     \item Viešas (angl. \textit{Public}), kuriame skelbiama informacija yra prieinama absoliučiai kiekvienam IOTA tinklo nariui.
     \item Privatus (angl. \textit{Private}), kurį gali iššifruoti šalis, turinti specialų raktą. Naudinga įrenginių tarpusavio komunikacijai.
     \item Suvaržytas (angl. \textit{Restricted}), kurį gali iššifruoti šalis, turinti specialų raktą, bei turinti autorizacijos raktą. Šis režimas leidžia kanalo iniciatoriui nutraukti transliavimą šalims, turinčioms tam tikrą autorizacijos raktą nepakeičiant specialaus rakto reikšmės. Nustačius naują autorizacijos raktą galima nustatyti, kam bus suteiktos naujos prenumeratorių teisės.
 \end{itemize}
 
-Supaprastintas MAM veikimo modelis pavaizduotas 9 pav. Duomenų pranešėjas siunčia žinutes, kurias stebi 3 prenumeratoriai. Pirmajam pranešėjas atskleidė specialų ir autorizacijos raktą, todėl jis gali iššifruoti ir perskaityti visų kanalų žinutes. Antrasis prenumeratorius turi specialų raktą, todėl gali skaityti privataus ir viešo kanalo žinutes, tačiau negali iššifruoti suvaržyto kanalo žinutės. Trečiasis prenumeratorius gali skaityti tik viešojo kanalo žinutes, t.y. trečią ir šeštą žinutes.
+Supaprastintas MAM veikimo modelis pavaizduotas ~\ref{img:9} pav. Duomenų pranešėjas siunčia žinutes, kurias stebi 3 prenumeratoriai. Pirmajam pranešėjas atskleidė specialų ir autorizacijos raktą, todėl jis gali iššifruoti ir perskaityti visų kanalų žinutes. Antrasis prenumeratorius turi specialų raktą, todėl gali skaityti privataus ir viešo kanalo žinutes, tačiau negali iššifruoti suvaržyto kanalo žinučių. Trečiasis prenumeratorius gali skaityti tik viešojo kanalo žinutes, t.y. trečią ir šeštą žinutes.
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.51]{images/mam-example}
     \caption{MAM supaprastintas modelis}
+    \label{img:9}
 \end{figure}
 
 
@@ -293,17 +298,17 @@ Supaprastintas MAM veikimo modelis pavaizduotas 9 pav. Duomenų pranešėjas siu
 %               2.2.2.5. KVORUMU PAREMTI SKAIČIAVIMAI
 % --------------------------------------------------------------- %
 
-\subsubsubsection{Kvorumu paremti skaičiavimai}
+\subsubsubsection{Kvorumu paremti skaičiavimai} \label{subsection:dag-qubic}
 
-Kaip jau nagrinėta 2.2.1.3 poskyryje, išmanieji kontraktai labai praturtina blokų grandines. Ne išimtis ir IOTA. To pagrindu IOTA platformoje kaip atskiras sluoksnis yra kuriamas kvorumu paremtų skaičiavimų protokolas (angl. \textit{Quorum Based Computations}), toliau – Qubic, sudarytas iš 3 esminių dedamųjų.
+Kaip jau nagrinėta~\ref{subsection:blockchain-drawbacks} poskyryje, išmanieji kontraktai praturtina blokų grandines. Ne išimtis ir IOTA. To pagrindu IOTA platformoje kaip atskiras sluoksnis yra kuriamas kvorumu paremtų skaičiavimų protokolas (angl. \textit{Quorum Based Computations}), toliau – Qubic, sudarytas iš 3 esminių dedamųjų.
 
-Pirmoji – orakulai (angl. \textit{Oracles}), atliekantys tinklo tarpininko su išoriniu pasauliu vaidmenį \cite{iota2017oracles}. Galimas to pavyzdys – IOTA tinklas negali žinoti tiekimo grandinėse galimų rizikų, sukeltų gamtos stichijų ar kitų grandinės narių, kurių didelė dalis aprašyta šaltiniuose \cite{behdani2012handle, strom2013pwc}, poveikio ir dydžio. Orakulas šią informaciją galėtų surinkti ir transliuoti ją tinklui. Tačiau šia informacija orakulai gali manipuliuoti savo naudai. Kad to būtų išvengta, išorinio pasaulio faktų validumas turi būti priimtas kvalifikuota dauguma – kvorumu, t.y. ne mažiau nei 2/3 visų orakulų turi pateikti sutampančią informaciją \cite{iota2017oracles}. Taip pat egzistuoja ir kiti apsaugos mechanizmai, tokie kaip paskatos už teisingų rezultatų transliavimą, sankcijos už bandymus manipuliuoti informacija ir pan.
+Pirmoji – orakulai (angl. \textit{Oracles}), atliekantys tinklo tarpininko su išoriniu pasauliu vaidmenį~\cite{iota2017oracles}. Galimas to pavyzdys – IOTA tinklas negali žinoti tiekimo grandinėse galimų rizikų, sukeltų gamtos stichijų ar kitų grandinės narių, kurių nemaža dalis aprašyta šaltiniuose~\cite{behdani2012handle, strom2013pwc}, poveikio ir dydžio. Orakulas šią informaciją galėtų surinkti ir transliuoti ją tinklui. Tačiau šia informacija orakulai gali manipuliuoti savo naudai. Kad to būtų išvengta, išorinio pasaulio faktų validumas turi būti priimtas kvalifikuota dauguma – kvorumu, t.y. ne mažiau nei 2/3 visų orakulų turi pateikti sutampančią informaciją~\cite{iota2017oracles}. Taip pat egzistuoja ir kiti apsaugos mechanizmai, tokie kaip paskatos už teisingų rezultatų transliavimą, sankcijos už bandymus manipuliuoti informacija ir pan.
 
-Antroji Qubic dedamoji – paskirstyti skaičiavimai \cite{iota2017oracles}. Daiktų internete smulkiems įrenginiams gali tekti susidurti su sudėtingais skaičiavimais, kurių šie įrenginiai nepajėgtų išspręsti arba tai užtruktų per daug laiko. Qubic protokolas įgalintų perduoti (angl. \textit{Outsource}) šiuos skaičiavimus išorinėms ir gerokai galingesnėms mašinoms, kurios grąžintų skaičiavimų rezultatus smulkiems įrenginiams.
+Antroji Qubic dedamoji – paskirstyti skaičiavimai~\cite{iota2017oracles}. Daiktų internete smulkiems įrenginiams gali tekti susidurti su sudėtingais skaičiavimais, kurių šie įrenginiai nepajėgtų išspręsti arba tai užtruktų per daug laiko. Qubic protokolas įgalintų perduoti (angl. \textit{Outsource}) šiuos skaičiavimus išorinėms ir gerokai galingesnėms mašinoms, kurios grąžintų skaičiavimų rezultatus smulkiems įrenginiams.
 
-Paskutinė Qubic protokolo dalis – išmanieji kontraktai. Išmanieji kontraktai pasižymi savybe: žinodami, kokius įvesties duomenis paduosime kontraktui, taip pat žinosime, kokio rezultato iš jo tikėtis \cite{iota2017oracles}. Ši savybė leidžia juos pritaikyti realizuojant mašinų tarpusavio bendravimą (angl. Machine to Machine), toliau – M2M. Taip pat būtų galima automatizuoti informacijos apsikeitimą, bendravimą su prieš tai minėtais orakulais, bei paskirstytų skaičiavimų inicijavimą.
+Paskutinė Qubic protokolo dalis – išmanieji kontraktai. Išmanieji kontraktai pasižymi savybe: žinodami, kokius įvesties duomenis paduosime kontraktui, taip pat žinosime, kokio rezultato iš jo tikėtis~\cite{iota2017oracles}. Ši savybė leidžia juos pritaikyti realizuojant mašinų tarpusavio bendravimą (angl. Machine to Machine), toliau – M2M. Taip pat būtų galima automatizuoti informacijos apsikeitimą, bendravimą su prieš tai minėtais orakulais, bei paskirstytų skaičiavimų inicijavimą.
 
-Qubic įgyvendinimas iš dalies yra panašus į turimos įtakos konsensuso algoritmą (angl. \textit{Proof of Stake}), toliau – PoS, kurį turi įgyvendinę dalis blokų grandinių bei prie kurio ateityje ketina pereiti Ethereum platforma\footnote{Informacija iš: https://docs.ethhub.io/ethereum-roadmap/ethereum-2.0/proof-of-stake. Tikrinta 2019-05-14.}. PoS efektyvina tinklo naudojamus resursus, likviduodama PoW atliekamą darbą mašinoms bei pašalindama globalaus konsensuso poreikį smulkiems dalykams. Vietoje to, kad validavimą, skaičiavimus bei balsavimą dėl visų išorinio pasaulio faktų atliktų kiekvienas tinkle esantis narys, šį darbą padaro specialūs agentai, IOTA platformoje vadinami orakulais.
+Qubic įgyvendinimas iš dalies yra panašus į turimos įtakos konsensuso algoritmą (angl. \textit{Proof of Stake}), toliau – PoS, kurį turi įgyvendinę dalis blokų grandinių bei prie kurio ateityje ketina pereiti Ethereum platforma\footnote{Informacija iš: \href{https://docs.ethhub.io/ethereum-roadmap/ethereum-2.0/proof-of-stake}{https://docs.ethhub.io/ethereum-roadmap/ethereum-2.0/proof-of-stake} [žiūrėta 2019-05-17].}. PoS efektyvina tinklo naudojamus resursus, likviduodama PoW atliekamą darbą mašinoms bei pašalindama globalaus konsensuso poreikį smulkiems dalykams. Taigi, vietoje to, kad validavimą, skaičiavimus bei balsavimą dėl visų išorinio pasaulio faktų atliktų kiekvienas tinkle esantis narys, šį darbą padaro orakulai.
 
 
 
@@ -311,22 +316,23 @@ Qubic įgyvendinimas iš dalies yra panašus į turimos įtakos konsensuso algor
 %               2.2.2.6. EKONOMINIS KLASTERIZAVIMAS
 % --------------------------------------------------------------- %
 
-\subsubsubsection{Ekonominis klasterizavimas}
+\subsubsubsection{Ekonominis klasterizavimas} \label{subsection:dag-ec}
 
-Ekonominis klasterizavimas (angl. \textit{Economic Clustering}), toliau EC – samprata, pristatyta Sergey Ivancheglo ir įgalinanti IOTA platformos plečiamumą, kitaip – neribotą TPS kiekį \cite{sergey2018economic}.
-Ekonominis klasteris – tai grupė prietaisų, esančių konkrečiame regione: kontinente, valstybėje, kelio ruože ar pastate \cite{sergey2018economic}. 
+Ekonominis klasterizavimas (angl. \textit{Economic Clustering}), toliau EC – samprata, pristatyta Sergey Ivancheglo ir įgalinanti IOTA platformos plečiamumą, kitaip – neribotą TPS kiekį~\cite{sergey2018economic}.
+Ekonominis klasteris – tai grupė prietaisų, esančių konkrečiame regione: kontinente, valstybėje, kelio ruože ar pastate~\cite{sergey2018economic}. 
 
-Pati idėja yra glaudžiai susijusi su daiktų internetu, o klasterių struktūra priklauso nuo ekonominės veiklos tame regione \cite{sergey2018economic}. IOTA platforma naudojasi vartotojai iš bet kurios pasaulio vietos, bet tai nėra efektyvu. Pavyzdžiui, JAV įsikūrusio fabriko temperatūros jutikliui nėra aktualu Kinijos piliečio transakcija savo draugui, gyvenančiam už kelių kvartalų. Tačiau jutiklis, norėdamas atlikdamas informacinę transakciją klientui, tikėtina, kad turės patvirtinti būtent jam neaktualią transakciją iš Kinijos. O juk būtų logiškiau, jeigu fabriko prietaisai turėtų prieigą tik prie jiems aktualių transakcijų ekonominiame regione.
+Pati idėja yra glaudžiai susijusi su daiktų internetu, o klasterių struktūra priklauso nuo ekonominės veiklos tame regione~\cite{sergey2018economic}. IOTA platforma naudojasi vartotojai iš bet kurios pasaulio vietos, bet tai nėra efektyvu. Pavyzdžiui, JAV įsikūrusio fabriko temperatūros jutikliui nėra aktualu Kinijos piliečio transakcija savo draugui, gyvenančiam už kelių kvartalų. Tačiau jutiklis, norėdamas atlikdamas informacinę transakciją klientui, tikėtina, kad turės validuoti ir patvirtinti būtent jam neaktualią transakciją iš Kinijos. O juk būtų logiškiau, jeigu fabriko prietaisai turėtų prieigą tik prie jiems aktualių transakcijų ekonominiame regione.
 
-EC išsidėstymo modelis pavaizduotas 10 pav. Kiekviename klasteryje yra lokaliai vykdomos IOTA transakcijos. Pavyzdžiui, 0 klasteris gali atlikti transakcijas 0 klasteryje, 1 klasteriui ir 2 klasteriui. Tačiau 0 ir 3 klasteris nėra kaimynai ir vienas kito transakcijų nemato, todėl jas ignoruoja. Jeigu iškiltų poreikis 0 klasterio nariui atlikti transakciją 3 klasteryje, šiam nariui tektų atlikti transakciją sau pačiam į 1 arba 2 klasterį, tada iš jo atlikti transakciją sau į 3 klasterį ir atlikti transakciją 3 klasteryje.
+EC išsidėstymo modelis pavaizduotas~\ref{img:10} pav. Kiekviename klasteryje yra lokaliai vykdomos IOTA transakcijos. Pavyzdžiui, 0 klasteris gali atlikti transakcijas 0 klasteryje, 1 klasteriui ir 2 klasteriui. Tačiau 0 ir 3 klasteris nėra kaimynai ir vienas kito transakcijų nemato, todėl jas ignoruoja. Jeigu iškiltų poreikis 0 klasterio nariui atlikti transakciją 3 klasteryje, šiam nariui tektų atlikti transakciją sau pačiam į 1 arba 2 klasterį, tada iš jo atlikti transakciją sau į 3 klasterį ir atlikti transakciją 3 klasteryje.
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.7]{images/economic-clusters}
     \caption{Ekonominio klasterizavimo modelis}
+    \label{img:10}
 \end{figure}
 
-Tačiau iš EC modelio kyla tam tikri trūkumai ir rizikos \cite{sergey2018economic}: 
+Tačiau iš EC modelio kyla tam tikri trūkumai ir rizikos~\cite{sergey2018economic}: 
 \begin{itemize}
     \item Sunkumai atliekant transakcijas į tolimus klasterius;
     \item Dažnai tenka pervedinėti valiutą sau pačiam;
@@ -339,19 +345,20 @@ Tačiau iš EC modelio kyla tam tikri trūkumai ir rizikos \cite{sergey2018econo
 %            2.2.2.7. DALYVAVIMAS TINKLE NEPRISIJUNGUS
 % --------------------------------------------------------------- %
 
-\subsubsubsection{Dalyvavimas tinkle neprisijungus}
+\subsubsubsection{Dalyvavimas tinkle neprisijungus} \label{subsection:dag-offline}
 
-Transportuojant krovinius gali tekti atsidurti situacijose, kai interneto ryšys yra nepasiekimas, taip pat reikia užtikrinti, kad darbas tęstųsi net ir trumpam dingus internetui. Pavyzdys – krovinių plukdymas per vandenyną. Naudojama technologija turi užtikrinti stabilų veikimą be interneto, ir kad atsiradus interneto ryšiui nebūtų pateikiami suklastoti duomenys.
+Transportuojant krovinius gali tekti atsidurti situacijose, kai interneto ryšys yra nepasiekimas. Svarbu, kad darbas tęstųsi net ir trumpam dingus internetui. Pavyzdys – krovinių plukdymas per vandenyną. Naudojama technologija turi užtikrinti stabilų veikimą be interneto, ir kad atsiradus interneto ryšiui nebūtų pateikiami suklastoti duomenys.
 
-Šiuo klausimu IOTA yra pranašesnė už Bitcoin ir Ethereum, nes įgalina transakcijas be interneto ryšio \cite{zivic2019distributed}. Transakcijų vykdymas periode be interneto pavaizduotas 11 pav. Naudotojas X, dingus internetui, mato visas transakcijas, išskyrus tas, kurias likęs tinklas atlieka naudotojui X neturint interneto ryšio. Vienintelė logiška veiksmų seka naudotojui X yra susikurti savo atskirą raizginį (angl. \textit{sub-tangle}), kuriame X transakcijos tvirtins X transakcijas.
+Šiuo klausimu IOTA yra pranašesnė už Bitcoin ir Ethereum, nes įgalina transakcijas neturint interneto ryšio~\cite{zivic2019distributed}. Transakcijų vykdymas periode be interneto pavaizduotas~\ref{img:11} pav. Naudotojas X, dingus internetui, mato visas transakcijas, išskyrus tas, kurias likęs tinklas atlieka naudotojui X neturint interneto ryšio. Vienintelė logiška veiksmų seka naudotojui X yra susikurti savo atskirą raizginį (angl. \textit{sub-tangle}), kuriame X transakcijos tvirtins X transakcijas.
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.6]{images/offline-tangle}
     \caption{Transakcijų vykdymas neturint interneto prieigos}
+    \label{img:11}
 \end{figure}
 
-Atsiradus interneto prieigai dar nereiškia, kad vartotojo X atskiras raizginys bus patvirtintas, todėl reikia atlikti specialias stiprinančias transakcijas, kurios padidina šansus, kad tinklas palaipsniui pripažins ir validuos atskirą raizginį kaip tinkamą įtraukti į bendrą tinklą \cite{bennet2017technical}. Stiprinanti transakcija būtinai turi patvirtinti vieną pagrindinio raizginio ir vieną atskiro raizginio X transakciją \cite{bennet2017technical}. Kuo daugiau stiprinančių transakcijų, tuo didesnė validavimo tikimybė, tačiau yra reikalingos bent 2 stiprinančios transakcijos \cite{bennet2017technical}.
+Atsiradus interneto prieigai dar nereiškia, kad vartotojo X atskiras raizginys bus patvirtintas, todėl reikia atlikti specialias stiprinančias transakcijas, kurios padidina šansus, kad tinklas palaipsniui pripažins ir validuos atskirą raizginį kaip tinkamą įtraukti į bendrą tinklą~\cite{bennet2017technical}. Stiprinanti transakcija būtinai turi patvirtinti vieną pagrindinio raizginio ir vieną atskiro raizginio X transakciją~\cite{bennet2017technical}. Kuo daugiau stiprinančių transakcijų, tuo didesnė validavimo tikimybė, tačiau yra reikalingos bent 2 stiprinančios transakcijos~\cite{bennet2017technical}.
 
 
 
@@ -359,13 +366,13 @@ Atsiradus interneto prieigai dar nereiškia, kad vartotojo X atskiras raizginys 
 %  2.3. BLOKŲ GRANDINĖS IR ORIENTUOTO GRAFO BE CIKLŲ PALYGINIMAS
 % --------------------------------------------------------------- %
 
-\subsection{Blokų grandinės ir orientuoto grafo be ciklų palyginimas}
+\subsection{Blokų grandinės ir orientuoto grafo be ciklų palyginimas} \label{subsection:dlt-compare}
 
 Taigi, galima apibendrinti pagrindinius skirtumus tarp DAG ir blokų grandinių principais paremtų DLT. Architektūra yra akivaizdžiausias skirtumas. Blokų grandinė yra tiesinės formos darinys, sudarytas iš nuosekliai sujungtų blokų, o DAG yra raizginys, sudarytas iš individualių transakcijų. Tačiau iš to kyla IOTA trūkumas – palankesnės sąlygos piktybinių transakcijų kūrimui. Blokų grandinėse sukurti atskirą piktybinių blokų atšaką yra gerokai sudėtingiau ir reikalauja daugiau resursų negu kuriant atskirą transakcijų grandį IOTA tinkle. Tačiau nuogąstauti dėl tinklo pažeidžiamumo nėra pagrindo. Tam, kad būtų pažeistas duomenų nekintamumas, abiem atvejais kenkėjo skaičiavimo resursai turi būti didesni nei viso likusio tinklo.
 
 Abi DLT atmainos naudoja PoW skaičiavimus, tačiau IOTA tinkle kiekvienas narys juos atlieka individualiai. Tuo tarpu blokų grandinėse šį procesą galime deleguoti. Esant aukštam PoW skaičiavimų sudėtingumui, tai tampa trūkumu tiekimo grandinėse. Jeigu daiktų internetas taptų visuotinai naudojama technologija logistikoje, transakcijas arba apsikeitimą duomenimis turėtų atlikti net ir patys smulkiausi prietaisai, nepasižymintys didele skaičiavimo galia.
 
-Dar vienas IOTA trūkumas yra koordinatorius. Šiuo metu pastaroji pltforma yra ankstyvoje fazėje ir negali savarankiškai funkcionuoti, todėl ją turi prižiūrėti specialus agentas, vadinamas koordinatoriumi \cite{bramas2018stability}. Yra teigiama, kad tai pažeidžia vieną iš pagrindinių DLT principų – nepriklausomumą nuo trečiųjų šalių. Šiuo atžvilgiu blokų grandinės lenkia IOTA, nes gali veikti autonomiškai, be trečiosios šalies įsikišimo. Vis dėlto IOTA kūrėjai ateityje tikisi pašalinti koordinatoriaus poreikį \cite{bramas2018stability}.
+Dar vienas IOTA trūkumas yra koordinatorius. Šiuo metu pastaroji pltforma yra ankstyvoje fazėje ir negali savarankiškai funkcionuoti, todėl ją turi prižiūrėti specialus agentas, vadinamas koordinatoriumi~\cite{bramas2018stability}. Yra teigiama, kad tai pažeidžia vieną iš pagrindinių DLT principų – nepriklausomumą nuo trečiųjų šalių. Šiuo atžvilgiu blokų grandinės lenkia IOTA, nes gali veikti autonomiškai, be trečiosios šalies įsikišimo. Vis dėlto IOTA kūrėjai ateityje tikisi pašalinti koordinatoriaus poreikį~\cite{bramas2018stability}.
 
 Saugumo klausimu IOTA turi pranašumą kvantinių kompiuterių atžvilgiu, tačiau tai yra labiau aktualu ilgojoje perspektyvoje. Kol kas nėra sukurtų galingų, pigių ir plačiai naudojamų kvantinių kompiuterių, todėl šis privalumas šiandien nėra lemiamas veiksnys renkantis tarp šių dviejų DLT tipų. Be to, blokų grandinės laikui bėgant galėtų prisitaikyti prie kvantinių kompiuterių keliamų grėsmių pakeisdamos savo architektūrinius sprendimus.
 
@@ -373,4 +380,4 @@ Ko gero didžiausią įtaką technologijos pasirinkimui lemia rodikliai, susiję
 
 IOTA taip pat įgalina transakcijas neprisijungus ir MAM, sukuriančius potencialių technologijos panaudojimo atvejų, o pilnai įgyvendinus kvorumu paremtus skaičiavimus ir ekonominį klasterizavimą, jų atsirastų dar daugiau.
 
-Nepaisant visų IOTA trūkumų, remdamasis jos pranašumais blokų grandinių atžvilgiu ir sąlygomis daiktų internetui, darbo autorius teigia, jog būtent ši DLT atmaina yra palankesnė taikymui tiekimo grandinių ir logistikos srityje. 
+Nepaisant visų IOTA trūkumų, remiantis jos savybių ir rodiklių pranašumais blokų grandinių atžvilgiu bei sąlygomis daiktų internetui, galima teigti, jog būtent ši DLT atmaina yra palankesnė taikymui tiekimo grandinių ir logistikos srityje. Taigi, toliau pasirinkta konstruoti panaudojimo scenarijus tiekimo grandinės procesuose naudojant IOTA platformą.
